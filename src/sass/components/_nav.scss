@@ -1,0 +1,52 @@
+header {
+    z-index: 2;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .container-link {
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+
+    a {
+        font-size: 17px;
+        display: inline-block;
+        transform: translateY(0);
+        transition: 0.1s ease;
+        p {
+            pointer-events: none;
+            transition: 0.5s ease;
+        }
+
+        div {
+            display: flex;
+            pointer-events: none;
+        }
+
+        .activeTransition p {
+            transform: translateY(-100%);
+        }
+
+        .under-text {
+            position: absolute;
+            top: 100%;
+        }
+
+        &.active {
+            & p {
+                transform: translateY(-100%);
+            }
+        }
+    }
+
+    .orangeRed {
+        color: $orange;
+    }
+}

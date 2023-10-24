@@ -1,0 +1,55 @@
+.littleCross {
+    display: flex;
+    height: 130px;
+    width: 100%;
+    justify-content: space-between;
+
+    .cross {
+        width: 15px;
+        height: 15px;
+        position: relative;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .trait--1,
+        .trait--2,
+        .trait--3,
+        .trait--4 {
+            position: absolute;
+            background: $white;
+        }
+
+        .trait-- {
+            &1 {
+                width: 50%;
+                height: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &2 {
+                width: 50%;
+                height: 2px;
+                bottom: 50%;
+                right: 0;
+                transform: translateY(50%);
+            }
+            &3 {
+                height: 50%;
+                width: 2px;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+            }
+            &4 {
+                height: 50%;
+                width: 2px;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+    }
+}

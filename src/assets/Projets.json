@@ -1,0 +1,88 @@
+[
+    {
+        "projet": "P1",
+        "name": "Sophie Bluel",
+        "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+        "description": [
+            "Sophie Bluel - Portfolio - un projet de formation réalisé à ",
+            "OpenClassrooms afin d’apprendre le JavaScript. Basé sur",
+            "  une maquette Figma, j’ai intégré une page de connexion et",
+            "  affiché dynamiquement depuis une API les travaux dans le",
+            "  portfolio. L’intégration d’une modale était également ",
+            "  demandée afin d’ajouter ou encore de supprimer des ",
+            " travaux en tant qu’administrateur du site."
+        ],
+        "liens": [
+            "https://github.com/Scharlyopitz/Projet-6-Creez-une-page-web-dynamique-avec-JavaScript"
+        ]
+    },
+    {
+        "projet": "P2",
+        "name": "Ohmy Food",
+        "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+        "description": [
+            "OhMyFood - un projet de formation réalisé à ",
+            " OpenClassrooms afin d’apprendre les  ",
+            "animations CSS. Basé sur une maquette Figma  ",
+            "en mobile first, j’ai intégré une page d’accueil,  ",
+            "quatre pages de menu de restaurants et un ",
+            "loader."
+        ],
+        "liens": [
+            "https://github.com/Scharlyopitz/Ohmyfood",
+            "https://scharlyopitz.github.io/Ohmyfood/"
+        ]
+    },
+    {
+        "projet": "P3",
+        "name": "Ninna Carducci",
+        "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+        "description": [
+            "Ninna Carducci - un projet de formation réalisé à ",
+            " OpenClassrooms afin d’apprendre le SEO. J'ai  ",
+            " optimisé le référencement d'un site de photographe ",
+            " en bonifiant les images, ajouté une balise meta ",
+            " description et réseaux sociaux, minifié le liens JS",
+            " et CSS etc. Avec l'utilisation de  Google lighthouse."
+        ],
+        "liens": [
+            "https://github.com/Scharlyopitz/Projet-SEO-OpenClassrooms",
+            "https://scharlyopitz.github.io/Projet-SEO-OpenClassrooms/"
+        ]
+    },
+    {
+        "projet": "P4",
+        "name": "Kasa",
+        "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+        "description": [
+            "Kasa - un projet de formation réalisé à Openclassrooms",
+            "afin d'apprendre React. Le but, créer une application web",
+            " de location immobilière, j'ai utilisé nodeJs côté backend",
+            " pour prendre les informations et les ajoutés pour chaque",
+            "  logements et utilisé des composents réutilisables."
+        ],
+        "liens": ["https://github.com/Scharlyopitz/Projet-Kasa-OpenClassroom"]
+    },
+    {
+        "projet": "P5",
+        "name": "Coaching website",
+        "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+        "description": [
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+            " Eveniet, cumque neque. Voluptatum sequi sit sint eos blanditiis deleniti culpa, mollitia, repellendus quos consequuntur quis,",
+            " aliquid eum eius magnam dolorum doloribus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cumque neque. Voluptatum sequi sit sint eos blanditiis deleniti culpa, mollitia, repellendus quos consequuntur quis, aliquid eum eius magnam ddoloribus."
+        ],
+        "liens": []
+    },
+    {
+        "projet": "P6",
+        "name": "House of gucci",
+        "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+        "description": [
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+            " Eveniet, cumque neque. Voluptatum sequi sit sint eos blanditiis deleniti culpa, mollitia, repellendus quos consequuntur quis,",
+            " aliquid eum eius magnam dolorum doloribus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cumque neque. Voluptatum sequi sit sint eos blanditiis deleniti culpa, mollitia, repellendus quos consequuntur quis, aliquid eum eius magnam ddoloribus."
+        ],
+        "liens": []
+    }
+]

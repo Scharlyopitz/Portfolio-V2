@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+    background: $original-grandient;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Urbanist";
+    text-transform: uppercase;
+}
+
+body,
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+section {
+    height: 100vh;
+}
+
+.hidden {
+    overflow-y: hidden;
+}
+
+.arrow {
+    transform: rotate(-45deg);
+    margin-right: 5px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
