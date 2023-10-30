@@ -1,20 +1,34 @@
 #projet {
-    img,
+    background: $vert;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     .cross,
-    .buttons-container,
+    .img-container,
     .animate-text-container,
     .txtProjet {
         z-index: 2;
         position: fixed;
     }
 
-    img {
+    .img-container {
+        overflow: hidden;
         pointer-events: none;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        top: 60%;
+        transform: translateY(-50%);
+        right: 10%;
+        width: 400px;
+        height: 500px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
     }
 
     .cross {
@@ -53,9 +67,8 @@
     }
 
     .buttons-container {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 10%;
+        display: flex;
+        justify-content: space-around;
 
         .parent-btn {
             overflow: hidden;
@@ -65,6 +78,7 @@
                 display: flex;
                 justify-content: end;
                 align-items: center;
+
                 &:hover svg {
                     opacity: 1;
                 }
@@ -131,13 +145,20 @@
     }
 
     .txtProjet {
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
         left: 10%;
         font-size: 25px;
 
         .projet_description {
             overflow: hidden;
+
+            &_trait {
+                width: 70%;
+                height: 1px;
+                background: $white;
+                margin: 50px auto;
+            }
         }
     }
 }

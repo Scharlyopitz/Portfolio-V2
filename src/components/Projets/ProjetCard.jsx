@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useState } from "react";
 
 import { AnimatedProjet } from "../Animations";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjetCard({ base, projet, idx }) {
     const [dataClick, setDataClick] = useState("");
@@ -14,6 +15,8 @@ export default function ProjetCard({ base, projet, idx }) {
     const parallax = useTransform(scrollYProgress, [0, 1], ["-30%", "-10%"]);
 
     const slowScroll = useTransform(scrollYProgress, [0, 1], ["0", "100vh"]);
+
+    const [activePointerEvents, setActivePointerEvents] = useState(false);
 
     const slowParallax = useTransform(
         scrollYProgress,
@@ -31,6 +34,7 @@ export default function ProjetCard({ base, projet, idx }) {
                 to={`${base}projets/${projet.name}`}
                 className={`projet-${idx + 1} `}
                 key={idx}
+                style={{ pointerEvents: activePointerEvents && "all" }}
             >
                 <motion.div
                     style={{
@@ -43,6 +47,7 @@ export default function ProjetCard({ base, projet, idx }) {
                     }}
                     onClick={(e) => handleClick(e.target)}
                     variants={AnimatedProjet}
+                    onAnimationComplete={() => setActivePointerEvents(true)}
                     data-id={idx + 1}
                     data-name={projet.name}
                     whileHover={{

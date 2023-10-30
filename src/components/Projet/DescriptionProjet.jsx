@@ -1,9 +1,11 @@
 import {
     AnimateProjetDescription,
     DelayProjetDescription,
+    AnimateProjetTrait,
 } from "../Animations";
 
 import { motion } from "framer-motion";
+import ButtonProjet from "./ButtonProjet";
 
 export default function DescriptionProjet({ projet }) {
     return (
@@ -24,6 +26,11 @@ export default function DescriptionProjet({ projet }) {
                         </div>
                     );
                 })}
+                <motion.div
+                    variants={AnimateProjetTrait}
+                    className="projet_description_trait"
+                ></motion.div>
+                <ButtonProjet projet={projet} />
             </motion.div>
         </>
     );

@@ -194,37 +194,99 @@ header .orangeRed {
   font-size: 8vw;
   font-weight: 100;
 }
-#home .sectionAboutMe {
-  z-index: 5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70%;
-  background: #cdcdcd;
-}
-#home .sectionAboutMe svg {
-  position: absolute;
-  bottom: -99px;
-  width: 100%;
-  height: 100px;
-}
-#home .sectionAboutMe svg path {
-  fill: #cdcdcd;
-}
-#home .trait {
+
+#aboutMe .trait {
   z-index: 6;
   position: fixed;
-  top: 35%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   width: 1px;
   height: 25%;
-  background: #000000;
+  background: #ffffff;
 }
-#home .about-btn {
+#aboutMe .cross-back {
+  width: 70%;
+  height: 70%;
+  cursor: pointer;
+  position: relative;
+}
+#aboutMe .cross-back-container {
   z-index: 6;
+  position: fixed;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+#aboutMe .cross-back::after, #aboutMe .cross-back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+}
+#aboutMe .cross-back::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#aboutMe .cross-back::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+#aboutMe .about-description {
+  z-index: 6;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#aboutMe .about-description .description1,
+#aboutMe .about-description .description2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#aboutMe .about-description .description1 div:nth-child(1), #aboutMe .about-description .description1 div:nth-child(4), #aboutMe .about-description .description1 div:nth-child(6), #aboutMe .about-description .description1 div:nth-child(8), #aboutMe .about-description .description1 div:nth-child(11) {
+  margin-bottom: 20px;
+}
+#aboutMe .about-description .description2 div:nth-child(2), #aboutMe .about-description .description2 div:nth-child(4) {
+  margin-bottom: 20px;
+}
+#aboutMe .about-description div {
+  overflow: hidden;
+}
+#aboutMe .about-description div p {
+  font-size: 17px;
+}
+#aboutMe .sectionAboutMe {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1d2230;
+}
+#aboutMe .sectionAboutMe svg {
+  position: absolute;
+  bottom: -99px;
+  width: 100%;
+  height: 100px;
+}
+#aboutMe .sectionAboutMe svg path {
+  fill: #1d2230;
+}
+#aboutMe .about-btn {
   overflow: hidden;
   cursor: pointer;
   position: fixed;
@@ -232,7 +294,7 @@ header .orangeRed {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#home .about-btn p {
+#aboutMe .about-btn p {
   background: linear-gradient(90deg, transparent, white, transparent, white, transparent);
   background-size: 400% 400%;
   -webkit-background-clip: text;
@@ -246,35 +308,6 @@ header .orangeRed {
   100% {
     background-position: -65% 0;
   }
-}
-
-.about-description {
-  z-index: 6;
-  position: fixed;
-  top: 35%;
-  transform: translateY(-50%);
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  color: #000000;
-}
-.about-description .description1,
-.about-description .description2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.about-description .description1 div:nth-child(1), .about-description .description1 div:nth-child(4), .about-description .description1 div:nth-child(6), .about-description .description1 div:nth-child(8), .about-description .description1 div:nth-child(11) {
-  margin-bottom: 20px;
-}
-.about-description .description2 div:nth-child(2), .about-description .description2 div:nth-child(4) {
-  margin-bottom: 20px;
-}
-.about-description div {
-  overflow: hidden;
-}
-.about-description div p {
-  font-size: 17px;
 }
 
 #projets {
@@ -310,6 +343,7 @@ header .orangeRed {
      object-fit: cover;
 }
 #projets .container-projets .projet-1, #projets .container-projets .projet-2, #projets .container-projets .projet-3, #projets .container-projets .projet-4, #projets .container-projets .projet-5, #projets .container-projets .projet-6 {
+  pointer-events: none;
   width: 400px;
   height: 500px;
   display: flex;
@@ -363,18 +397,31 @@ header .orangeRed {
   overflow: hidden;
 }
 
-#projet img,
+#projet {
+  background: #192929;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 #projet .cross,
-#projet .buttons-container,
+#projet .img-container,
 #projet .animate-text-container,
 #projet .txtProjet {
   z-index: 2;
   position: fixed;
 }
-#projet img {
+#projet .img-container {
+  overflow: hidden;
   pointer-events: none;
-  top: 0;
-  left: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  right: 10%;
+  width: 400px;
+  height: 500px;
+}
+#projet .img-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -411,9 +458,8 @@ header .orangeRed {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 #projet .buttons-container {
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10%;
+  display: flex;
+  justify-content: space-around;
 }
 #projet .buttons-container .parent-btn {
   overflow: hidden;
@@ -469,11 +515,17 @@ header .orangeRed {
   margin: 10px;
 }
 #projet .txtProjet {
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   left: 10%;
   font-size: 25px;
 }
 #projet .txtProjet .projet_description {
   overflow: hidden;
+}
+#projet .txtProjet .projet_description_trait {
+  width: 70%;
+  height: 1px;
+  background: #ffffff;
+  margin: 50px auto;
 }/*# sourceMappingURL=style.css.map */

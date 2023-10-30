@@ -4,12 +4,11 @@ import Projets from "../assets/Projets.json";
 
 import DescriptionProjet from "../components/Projet/DescriptionProjet";
 import TextAnime from "../components/Projet/TextAnime";
-import ButtonProjet from "../components/Projet/ButtonProjet";
 import Cross from "../components/Projet/Cross";
 
 import { motion } from "framer-motion";
 
-import { AnimateProjetPage } from "../components/Animations";
+import { AnimateProjetPage, easeInOutQuart } from "../components/Animations";
 
 export default function Projet({ base }) {
     const { name } = useParams();
@@ -18,20 +17,28 @@ export default function Projet({ base }) {
 
     return (
         <>
-            <section id="projet">
-                <motion.img
-                    variants={AnimateProjetPage}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    src={projet.image}
-                    alt={projet.image}
-                />
+            <motion.section
+                variants={AnimateProjetPage}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                id="projet"
+            >
+                <div className="img-container">
+                    <motion.img
+                        initial={{ scale: 1.3 }}
+                        animate={{
+                            scale: 1,
+                            transition: { duration: 1.2, ease: easeInOutQuart },
+                        }}
+                        src={projet.image}
+                        alt={projet.image}
+                    />
+                </div>
                 <Cross base={base} />
                 <TextAnime projet={projet} />
                 <DescriptionProjet projet={projet} />
-                <ButtonProjet projet={projet} />
-            </section>
+            </motion.section>
         </>
     );
 }

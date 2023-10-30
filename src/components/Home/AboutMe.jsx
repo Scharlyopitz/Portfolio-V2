@@ -10,7 +10,14 @@ export default function AboutMe() {
 
     return (
         <section id="aboutMe">
-            <AnimatePresence>{activeBtn && <AboutMeSection />}</AnimatePresence>
+            <AnimatePresence>
+                {activeBtn && (
+                    <AboutMeSection
+                        activeBtn={activeBtn}
+                        setActiveBtn={setActiveBtn}
+                    />
+                )}
+            </AnimatePresence>
             <AboutMeBtn activeBtn={activeBtn} setActiveBtn={setActiveBtn} />
         </section>
     );

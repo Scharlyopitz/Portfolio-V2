@@ -1,10 +1,10 @@
-const easeInOutQuint = [0.83, 0, 0.17, 1];
-const easeInOutCubic = [0.65, 0, 0.35, 1];
-const easeOutCubic = [0.33, 1, 0.68, 1];
-const easeInOutQuart = [0.76, 0, 0.24, 1];
-const easeInCubic = [0.32, 0, 0.67, 0];
-const easeOutQuint = [0.22, 1, 0.36, 1];
-const easeInExpo = [0.7, 0, 0.84, 0];
+export const easeInOutQuint = [0.83, 0, 0.17, 1];
+export const easeInOutCubic = [0.65, 0, 0.35, 1];
+export const easeOutCubic = [0.33, 1, 0.68, 1];
+export const easeInOutQuart = [0.76, 0, 0.24, 1];
+export const easeInCubic = [0.32, 0, 0.67, 0];
+export const easeOutQuint = [0.22, 1, 0.36, 1];
+export const easeInExpo = [0.7, 0, 0.84, 0];
 
 const DelayTransitionPage = 0.5;
 
@@ -133,13 +133,13 @@ export const AnimatedProjetsTxt = {
         x: 0,
         transition: {
             delay: DelayTransitionPage,
-            duration: 1.5,
-            ease: easeOutQuint,
+            duration: 0.8,
+            ease: easeOutCubic,
         },
     },
     exit: {
         x: "100%",
-        transition: { duration: AnimationDuration, ease: easeInOutQuart },
+        transition: { duration: 0.8, ease: easeInOutQuart },
     },
 };
 
@@ -239,14 +239,10 @@ export const DelayAnimatedProjet = {
 export const AnimateProjetPage = {
     initial: {
         clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
-
-        scale: 1.5,
     },
     animate: {
-        scale: 1,
         clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",
         transition: {
-            delay: 0.1,
             duration: 1.2,
             ease: easeInOutQuart,
         },
@@ -260,9 +256,9 @@ export const AnimateProjetPage = {
     },
 };
 
-const DlayForProjet = 0.8;
+const DlayForProjet = 0.7;
 
-// ANIMATION FLECHE
+// ANIMATION  CROIX
 
 export const AnimateArrow = {
     initial: {
@@ -371,13 +367,35 @@ export const DelayProjetDescription = {
     animate: {
         transition: {
             delayChildren: DlayForProjet,
-            staggerChildren: 0.03,
+            staggerChildren: 0.05,
         },
     },
     exit: {
         transition: {
             staggerDirection: -1,
             staggerChildren: 0.03,
+        },
+    },
+};
+
+// ANIMATION TRAIT
+
+export const AnimateProjetTrait = {
+    initial: {
+        scale: 0,
+    },
+    animate: {
+        scale: 1,
+        transition: {
+            duration: 0.7,
+            ease: easeOutCubic,
+        },
+    },
+    exit: {
+        scale: 0,
+        transition: {
+            duration: 0.5,
+            ease: easeInExpo,
         },
     },
 };
@@ -407,20 +425,20 @@ export const PageAboutAnimation = {
 
 export const PageAboutDescription = {
     initial: {
-        y: "100%",
+        y: "120%",
     },
     animate: {
         y: 0,
         transition: {
-            duration: 0.5,
+            duration: 0.7,
             ease: easeInOutCubic,
         },
     },
     exit: {
-        y: "110%",
+        y: "120%",
         transition: {
             duration: 0.5,
-            ease: easeInExpo,
+            ease: easeInOutCubic,
         },
     },
 };
@@ -428,8 +446,8 @@ export const PageAboutDescription = {
 export const PageAboutDescriptionDelay = {
     animate: {
         transition: {
-            delayChildren: 0.5,
-            staggerChildren: 0.03,
+            delayChildren: 0.3,
+            staggerChildren: 0.05,
         },
     },
     exit: {
