@@ -5,7 +5,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useState } from "react";
 
 import { AnimatedProjet } from "../Animations";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjetCard({ base, projet, idx }) {
     const [dataClick, setDataClick] = useState("");

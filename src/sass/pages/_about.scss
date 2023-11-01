@@ -105,7 +105,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: $blue;
+        background: $vert;
 
         svg {
             position: absolute;
@@ -114,7 +114,7 @@
             height: 100px;
 
             path {
-                fill: $blue;
+                fill: $vert;
             }
         }
     }

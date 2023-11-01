@@ -447,7 +447,7 @@ export const PageAboutDescriptionDelay = {
     animate: {
         transition: {
             delayChildren: 0.3,
-            staggerChildren: 0.05,
+            staggerChildren: 0.03,
         },
     },
     exit: {

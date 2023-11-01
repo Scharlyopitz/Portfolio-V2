@@ -275,7 +275,7 @@ header .orangeRed {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #1d2230;
+  background: #192929;
 }
 #aboutMe .sectionAboutMe svg {
   position: absolute;
@@ -284,7 +284,7 @@ header .orangeRed {
   height: 100px;
 }
 #aboutMe .sectionAboutMe svg path {
-  fill: #1d2230;
+  fill: #192929;
 }
 #aboutMe .about-btn {
   overflow: hidden;
