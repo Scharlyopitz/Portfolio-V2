@@ -19,7 +19,7 @@
     {
         "projet": "P2",
         "name": "Ohmy Food",
-        "image": "/Ohmyfood.jpg",
+        "image": "/Portfolio-V2/Ohmyfood.jpg",
         "description": [
             "OhMyFood - un projet de formation réalisé à ",
             " OpenClassrooms afin d’apprendre les  ",
@@ -36,7 +36,7 @@
     {
         "projet": "P3",
         "name": "Ninna Carducci",
-        "image": "/Projet9.webp",
+        "image": "/Portfolio-V2/Projet9.webp",
         "description": [
             "Ninna Carducci - un projet de formation réalisé à ",
             " OpenClassrooms afin d’apprendre le SEO. J'ai  ",
@@ -53,7 +53,7 @@
     {
         "projet": "P4",
         "name": "Kasa",
-        "image": "/Kasa.png",
+        "image": "/Portfolio-V2/Kasa.png",
         "description": [
             "Kasa - un projet de formation réalisé à Openclassrooms",
             "afin d'apprendre React. Le but, créer une application web",
