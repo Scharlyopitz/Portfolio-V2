@@ -29,30 +29,22 @@ export default function Projet({ base }) {
                 id="projet"
             >
                 <motion.div
-                    initial={{ y: "20%" }}
+                    initial={{ y: "20%", opacity: 0 }}
                     animate={{
                         y: "-50%",
+                        opacity: 1,
                         transition: { duration: 1.2, ease: easeInOutQuart },
                     }}
                     exit={{
                         y: "20%",
                         transition: {
-                            // delay: 0.2,
                             duration: 0.8,
                             ease: easeInExpo,
                         },
                     }}
                     className="img-container"
                 >
-                    <motion.img
-                        // initial={{ scale: 1.1 }}
-                        // animate={{
-                        //     scale: 1,
-                        //     transition: { duration: 1.2, ease: easeInOutQuart },
-                        // }}
-                        src={projet.image}
-                        alt={projet.image}
-                    />
+                    <motion.img src={projet.image} alt={projet.image} />
                 </motion.div>
                 <Cross base={base} />
                 <TextAnime projet={projet} />
