@@ -1,19 +1,17 @@
 [
     {
         "projet": "P1",
-        "name": "Sophie Bluel",
-        "image": "/Portfolio-V2/sophie-bluel.png",
+        "name": "Booki",
+        "image": "/Portfolio-V2/Booki.jpg",
         "description": [
-            "Sophie Bluel - Portfolio - un projet de formation réalisé à ",
-            "OpenClassrooms afin d’apprendre le JavaScript. Basé sur",
-            "  une maquette Figma, j’ai intégré une page de connexion et",
-            "  affiché dynamiquement depuis une API les travaux dans le",
-            "  portfolio. L’intégration d’une modale était également ",
-            "  demandée afin d’ajouter ou encore de supprimer des ",
-            " travaux en tant qu’administrateur du site."
+            "Booki - un projet de formation réalisé à Openclassrooms",
+            "afin d'apprendre le Html/css. Le but, développer la page",
+            " d'accueil d'une agence de voyage avec HTML & CSS et faire",
+            " en sorte que la page soit responsive."
         ],
         "liens": [
-            "https://github.com/Scharlyopitz/Projet-6-Creez-une-page-web-dynamique-avec-JavaScript"
+            "https://github.com/Scharlyopitz/Projet-Booki",
+            "https://scharlyopitz.github.io/Projet-Booki/"
         ]
     },
     {
@@ -35,6 +33,51 @@
     },
     {
         "projet": "P3",
+        "name": "Print It",
+        "image": "/Portfolio-V2/Print-It.jpg",
+        "description": [
+            "Print It - un projet de formation réalisé à Openclassrooms",
+            "afin d'apprendre Javascript. Le but, créer un slider pour",
+            " dynamiser le site internet statique d'une petite entreprise",
+            " familiale muni des intructions qui m'ont été donnée."
+        ],
+        "liens": [
+            "https://github.com/Scharlyopitz/Carrousel-JS",
+            "https://scharlyopitz.github.io/Carrousel-JS/"
+        ]
+    },
+    {
+        "projet": "P4",
+        "name": "Sophie Bluel",
+        "image": "/Portfolio-V2/sophie-bluel.png",
+        "description": [
+            "Sophie Bluel - Portfolio - un projet de formation réalisé à ",
+            "OpenClassrooms afin d’apprendre le JavaScript. Basé sur",
+            "  une maquette Figma, j’ai intégré une page de connexion et",
+            "  affiché dynamiquement depuis une API les travaux dans le",
+            "  portfolio. L’intégration d’une modale était également ",
+            "  demandée afin d’ajouter ou encore de supprimer des ",
+            " travaux en tant qu’administrateur du site."
+        ],
+        "liens": [
+            "https://github.com/Scharlyopitz/Projet-6-Creez-une-page-web-dynamique-avec-JavaScript"
+        ]
+    },
+    {
+        "projet": "P5",
+        "name": "Kasa",
+        "image": "/Portfolio-V2/Kasa.png",
+        "description": [
+            "Kasa - un projet de formation réalisé à Openclassrooms",
+            "afin d'apprendre React. Le but, créer une application web",
+            " de location immobilière, j'ai utilisé nodeJs côté backend",
+            " pour prendre les informations et les ajoutés pour chaque",
+            "  logements et utilisé des composents réutilisables."
+        ],
+        "liens": ["https://github.com/Scharlyopitz/Projet-Kasa-OpenClassroom"]
+    },
+    {
+        "projet": "P6",
         "name": "Ninna Carducci",
         "image": "/Portfolio-V2/Projet9.webp",
         "description": [
@@ -49,40 +92,5 @@
             "https://github.com/Scharlyopitz/Projet-SEO-OpenClassrooms",
             "https://scharlyopitz.github.io/Projet-SEO-OpenClassrooms/"
         ]
-    },
-    {
-        "projet": "P4",
-        "name": "Kasa",
-        "image": "/Portfolio-V2/Kasa.png",
-        "description": [
-            "Kasa - un projet de formation réalisé à Openclassrooms",
-            "afin d'apprendre React. Le but, créer une application web",
-            " de location immobilière, j'ai utilisé nodeJs côté backend",
-            " pour prendre les informations et les ajoutés pour chaque",
-            "  logements et utilisé des composents réutilisables."
-        ],
-        "liens": ["https://github.com/Scharlyopitz/Projet-Kasa-OpenClassroom"]
-    },
-    {
-        "projet": "P5",
-        "name": "Coaching website",
-        "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
-        "description": [
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-            " Eveniet, cumque neque. Voluptatum sequi sit sint eos blanditiis deleniti culpa, mollitia, repellendus quos consequuntur quis,",
-            " aliquid eum eius magnam dolorum doloribus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cumque neque. Voluptatum sequi sit sint eos blanditiis deleniti culpa, mollitia, repellendus quos consequuntur quis, aliquid eum eius magnam ddoloribus."
-        ],
-        "liens": []
-    },
-    {
-        "projet": "P6",
-        "name": "House of gucci",
-        "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
-        "description": [
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-            " Eveniet, cumque neque. Voluptatum sequi sit sint eos blanditiis deleniti culpa, mollitia, repellendus quos consequuntur quis,",
-            " aliquid eum eius magnam dolorum doloribus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cumque neque. Voluptatum sequi sit sint eos blanditiis deleniti culpa, mollitia, repellendus quos consequuntur quis, aliquid eum eius magnam ddoloribus."
-        ],
-        "liens": []
     }
 ]

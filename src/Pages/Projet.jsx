@@ -44,7 +44,16 @@ export default function Projet({ base }) {
                     }}
                     className="img-container"
                 >
-                    <motion.img src={projet.image} alt={projet.image} />
+                    <motion.img
+                        initial={{ y: "-50%" }}
+                        animate={{
+                            y: 0,
+                            opacity: 1,
+                            transition: { duration: 1.2, ease: easeInOutQuart },
+                        }}
+                        src={projet.image}
+                        alt={projet.image}
+                    />
                 </motion.div>
                 <Cross base={base} />
                 <TextAnime projet={projet} />
