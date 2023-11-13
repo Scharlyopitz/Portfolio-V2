@@ -528,4 +528,11 @@ header .orangeRed {
   height: 1px;
   background: #ffffff;
   margin: 50px auto;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */

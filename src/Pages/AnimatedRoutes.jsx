@@ -16,6 +16,8 @@ export default function AnimatedRoutes({ base }) {
 
     const body = document.querySelector("body");
 
+    const BasicTitle = `Développeur Front-End | Scharly OPITZ`;
+
     useEffect(() => {
         if (location.pathname === `${base}projets`) {
             body.classList.add("hidden");
@@ -29,10 +31,15 @@ export default function AnimatedRoutes({ base }) {
         <>
             <AnimatePresence>
                 <Routes location={location} key={location.pathname}>
-                    <Route path={base} element={<Home />} />
+                    <Route
+                        path={base}
+                        element={<Home BasicTitle={BasicTitle} />}
+                    />
                     <Route
                         path={`${base}projets`}
-                        element={<Projets base={base} />}
+                        element={
+                            <Projets base={base} BasicTitle={BasicTitle} />
+                        }
                     />
                     <Route
                         path={`${base}projets/:name`}

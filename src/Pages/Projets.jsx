@@ -7,10 +7,12 @@ import LesProjets from "../assets/Projets.json";
 import { DelayAnimatedProjet } from "../components/Animations";
 
 import { motion } from "framer-motion";
+import TitlePage from "../components/General/TitlePage";
 
-export default function Projets({ base }) {
+export default function Projets({ base, BasicTitle }) {
     return (
         <>
+            <TitlePage title={BasicTitle} />
             <section id="projets">
                 <div className="background"></div>
 
