@@ -12,42 +12,37 @@ import { AnimationDuration } from "../components/Animations";
 import { useEffect } from "react";
 
 export default function AnimatedRoutes({ base }) {
-    const location = useLocation();
+  const location = useLocation();
 
-    const body = document.querySelector("body");
+  const body = document.querySelector("body");
 
-    const BasicTitle = `Développeur Front-End | Scharly OPITZ`;
+  const BasicTitle = `Développeur Front-End | Scharly OPITZ`;
 
-    useEffect(() => {
-        if (location.pathname === `${base}projets`) {
-            body.classList.add("hidden");
-            setTimeout(() => {
-                body.classList.remove("hidden");
-            }, AnimationDuration * 1300);
-        }
-    }, [location]);
+  useEffect(() => {
+    if (location.pathname === `${base}projets`) {
+      body.classList.add("hidden");
+      setTimeout(() => {
+        body.classList.remove("hidden");
+      }, AnimationDuration * 1300);
+    }
+  }, [location]);
 
-    return (
-        <>
-            <AnimatePresence>
-                <Routes location={location} key={location.pathname}>
-                    <Route
-                        path={base}
-                        element={<Home BasicTitle={BasicTitle} />}
-                    />
-                    <Route
-                        path={`${base}projets`}
-                        element={
-                            <Projets base={base} BasicTitle={BasicTitle} />
-                        }
-                    />
-                    <Route
-                        path={`${base}projets/:name`}
-                        element={<Projet base={base} />}
-                    />
-                    <Route path="*" element={<Error />} />
-                </Routes>
-            </AnimatePresence>
-        </>
-    );
+  return (
+    <>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path={base} element={<Home BasicTitle={BasicTitle} />} />
+          <Route
+            path={`${base}projets`}
+            element={<Projets base={base} BasicTitle={BasicTitle} />}
+          />
+          <Route
+            path={`${base}projets/:name`}
+            element={<Projet base={base} />}
+          />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </AnimatePresence>
+    </>
+  );
 }

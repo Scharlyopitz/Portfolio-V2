@@ -11,60 +11,60 @@ import Cross from "../components/Projet/Cross";
 import { motion } from "framer-motion";
 
 import {
-    AnimateProjetPage,
-    easeInOutQuart,
-    easeInExpo,
+  AnimateProjetPage,
+  easeInOutQuart,
+  easeInExpo,
 } from "../components/Animations";
 import TitlePage from "../components/General/TitlePage";
 
 export default function Projet({ base }) {
-    const { name } = useParams();
+  const { name } = useParams();
 
-    const projet = Projets.find((projet) => projet.name === name);
+  const projet = Projets.find((projet) => projet.name === name);
 
-    const ProjetsName = `${projet.name}`;
+  const ProjetsName = `${projet?.name}`;
 
-    return (
-        <>
-            <TitlePage title={ProjetsName} />
-            <motion.section
-                variants={AnimateProjetPage}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                id="projet"
-            >
-                <motion.div
-                    initial={{ y: "20%", opacity: 0 }}
-                    animate={{
-                        y: "-50%",
-                        opacity: 1,
-                        transition: { duration: 1.2, ease: easeInOutQuart },
-                    }}
-                    exit={{
-                        y: "20%",
-                        transition: {
-                            duration: 0.8,
-                            ease: easeInExpo,
-                        },
-                    }}
-                    className="img-container"
-                >
-                    <motion.img
-                        initial={{ y: "-50%" }}
-                        animate={{
-                            y: 0,
-                            opacity: 1,
-                            transition: { duration: 1.2, ease: easeInOutQuart },
-                        }}
-                        src={projet.image}
-                        alt={projet.image}
-                    />
-                </motion.div>
-                <Cross base={base} />
-                <TextAnime projet={projet} />
-                <DescriptionProjet projet={projet} />
-            </motion.section>
-        </>
-    );
+  return (
+    <>
+      <TitlePage title={ProjetsName} />
+      <motion.section
+        variants={AnimateProjetPage}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        id="projet"
+      >
+        <motion.div
+          initial={{ y: "20%", opacity: 0 }}
+          animate={{
+            y: "-50%",
+            opacity: 1,
+            transition: { duration: 1.2, ease: easeInOutQuart },
+          }}
+          exit={{
+            y: "20%",
+            transition: {
+              duration: 0.8,
+              ease: easeInExpo,
+            },
+          }}
+          className="img-container"
+        >
+          <motion.img
+            initial={{ y: "-50%" }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 1.2, ease: easeInOutQuart },
+            }}
+            src={projet?.image}
+            alt={projet?.image}
+          />
+        </motion.div>
+        <Cross base={base} />
+        <TextAnime projet={projet} />
+        <DescriptionProjet projet={projet} />
+      </motion.section>
+    </>
+  );
 }
