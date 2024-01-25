@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom";
 
-import { useEffect } from "react";
-
 import Projets from "../assets/Projets.json";
 
 import DescriptionProjet from "../components/Projet/DescriptionProjet";
