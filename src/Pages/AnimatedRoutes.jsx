@@ -25,8 +25,6 @@ export default function AnimatedRoutes({ base }) {
         body.classList.remove("hidden");
       }, AnimationDuration * 1300);
     }
-    location.key === "default" && setActiveError(true);
-    location.key !== "default" && setActiveError(false);
   }, [location]);
 
   return (
