@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 
-export default function TitlePage({ title, ErrorPage }) {
-  ErrorPage && console.log("ok");
-
+export default function TitlePage({ title }) {
   useEffect(() => {
     document.title = `${title}`;
   }, []);

@@ -5,7 +5,7 @@ export default function Error() {
 
   return (
     <>
-      <TitlePage title={ErrorPage} ErrorPage={ErrorPage} />
+      <TitlePage title={ErrorPage} />
       <h1 className="error">Error 404 THIS PAGE doesn't exist !</h1>
     </>
   );

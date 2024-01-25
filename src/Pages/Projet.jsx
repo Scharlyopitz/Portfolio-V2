@@ -7,6 +7,7 @@ import Projets from "../assets/Projets.json";
 import DescriptionProjet from "../components/Projet/DescriptionProjet";
 import TextAnime from "../components/Projet/TextAnime";
 import Cross from "../components/Projet/Cross";
+import Error from "./Error";
 
 import { motion } from "framer-motion";
 
@@ -23,6 +24,10 @@ export default function Projet({ base }) {
   const projet = Projets.find((projet) => projet.name === name);
 
   const ProjetsName = `${projet?.name}`;
+
+  if (!projet) {
+    return <Error />;
+  }
 
   return (
     <>
