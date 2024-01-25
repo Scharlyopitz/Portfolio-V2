@@ -295,7 +295,7 @@ header .orangeRed {
   transform: translate(-50%, -50%);
 }
 #aboutMe .about-btn p {
-  background: linear-gradient(90deg, transparent, white, transparent, white, transparent);
+  background: linear-gradient(90deg, transparent, #ffffff, transparent, #ffffff, transparent);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   color: transparent;

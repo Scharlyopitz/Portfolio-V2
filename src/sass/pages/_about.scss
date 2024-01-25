@@ -1,153 +1,153 @@
 #aboutMe {
-    .trait {
-        z-index: 6;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 20px;
-        width: 1px;
-        height: 25%;
-        background: $white;
+  .trait {
+    z-index: 6;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 1px;
+    height: 25%;
+    background: $white;
+  }
+
+  .cross-back {
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+    position: relative;
+
+    &-container {
+      z-index: 6;
+      position: fixed;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
     }
 
-    .cross-back {
-        width: 70%;
-        height: 70%;
-        cursor: pointer;
-        position: relative;
-
-        &-container {
-            z-index: 6;
-            position: fixed;
-            bottom: 15%;
-            left: 50%;
-            transform: translateX(-50%);
-            overflow: hidden;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-        }
-
-        &::after,
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background: $white;
-            top: 50%;
-            left: 50%;
-        }
-
-        &::after {
-            transform: translate(-50%, -50%) rotate(45deg);
-        }
-        &::before {
-            transform: translate(-50%, -50%) rotate(135deg);
-        }
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: $white;
+      top: 50%;
+      left: 50%;
     }
 
-    .about-description {
-        z-index: 6;
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
+    &::after {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(135deg);
+    }
+  }
 
-        .description1,
-        .description2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+  .about-description {
+    z-index: 6;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 
-        .description1 {
-            div {
-                &:nth-child(1),
-                &:nth-child(4),
-                &:nth-child(6),
-                &:nth-child(8),
-                &:nth-child(11) {
-                    margin-bottom: 20px;
-                }
-            }
-        }
-
-        .description2 {
-            div {
-                &:nth-child(2),
-                &:nth-child(4) {
-                    margin-bottom: 20px;
-                }
-            }
-        }
-
-        div {
-            overflow: hidden;
-
-            p {
-                font-size: 17px;
-            }
-        }
+    .description1,
+    .description2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .sectionAboutMe {
-        z-index: 5;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $vert;
-
-        svg {
-            position: absolute;
-            bottom: -99px;
-            width: 100%;
-            height: 100px;
-
-            path {
-                fill: $vert;
-            }
+    .description1 {
+      div {
+        &:nth-child(1),
+        &:nth-child(4),
+        &:nth-child(6),
+        &:nth-child(8),
+        &:nth-child(11) {
+          margin-bottom: 20px;
         }
+      }
     }
 
-    .about-btn {
-        overflow: hidden;
-        cursor: pointer;
-        position: fixed;
-        bottom: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        p {
-            background: linear-gradient(
-                90deg,
-                transparent,
-                white,
-                transparent,
-                white,
-                transparent
-            );
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-position: 0px 0;
-            font-size: 20px;
-            animation: background-position 2.5s linear infinite;
-            letter-spacing: 2px;
+    .description2 {
+      div {
+        &:nth-child(2),
+        &:nth-child(4) {
+          margin-bottom: 20px;
         }
+      }
     }
 
-    @keyframes background-position {
-        100% {
-            background-position: -65% 0;
-        }
+    div {
+      overflow: hidden;
+
+      p {
+        font-size: 17px;
+      }
     }
+  }
+
+  .sectionAboutMe {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $vert;
+
+    svg {
+      position: absolute;
+      bottom: -99px;
+      width: 100%;
+      height: 100px;
+
+      path {
+        fill: $vert;
+      }
+    }
+  }
+
+  .about-btn {
+    overflow: hidden;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        $white,
+        transparent,
+        $white,
+        transparent
+      );
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-position: 0px 0;
+      font-size: 20px;
+      animation: background-position 2.5s linear infinite;
+      letter-spacing: 2px;
+    }
+  }
+
+  @keyframes background-position {
+    100% {
+      background-position: -65% 0;
+    }
+  }
 }
