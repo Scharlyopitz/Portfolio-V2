@@ -40,7 +40,7 @@ export default function AnimatedRoutes({ base }) {
             path={`${base}projets/:name`}
             element={<Projet base={base} />}
           />
-          <Route path="*" element={<Error />} />
+          <Route path="*" element={<Error base={base} />} />
         </Routes>
       </AnimatePresence>
     </>

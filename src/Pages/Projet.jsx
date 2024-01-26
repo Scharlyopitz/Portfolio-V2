@@ -24,7 +24,7 @@ export default function Projet({ base }) {
   const ProjetsName = `${projet?.name}`;
 
   if (!projet) {
-    return <Error />;
+    return <Error base={base} />;
   }
 
   return (
