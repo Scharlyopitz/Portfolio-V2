@@ -7,25 +7,10 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";
 
-import { AnimationDuration } from "../components/Animations";
-
-import { useEffect } from "react";
-
 export default function AnimatedRoutes({ base, setErrorOff }) {
   const location = useLocation();
 
-  const body = document.querySelector("body");
-
   const BasicTitle = `Développeur Front-End | Scharly OPITZ`;
-
-  useEffect(() => {
-    if (location.pathname === `${base}projets`) {
-      body.classList.add("hidden");
-      setTimeout(() => {
-        body.classList.remove("hidden");
-      }, AnimationDuration * 1300);
-    }
-  }, [location]);
 
   return (
     <>

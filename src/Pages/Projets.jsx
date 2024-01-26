@@ -4,33 +4,48 @@ import BannerTxt from "../components/Projets/BannerTxt";
 
 import LesProjets from "../assets/Projets.json";
 
-import { DelayAnimatedProjet } from "../components/Animations";
+import {
+  DelayAnimatedProjet,
+  AnimationDuration,
+} from "../components/Animations";
 
 import { motion } from "framer-motion";
 import TitlePage from "../components/General/TitlePage";
 
+import { useEffect } from "react";
+
 export default function Projets({ base, BasicTitle }) {
-    return (
-        <>
-            <TitlePage title={BasicTitle} />
-            <section id="projets">
-                <div className="background"></div>
+  const body = document.querySelector("body");
 
-                <motion.div
-                    className="container-projets"
-                    variants={DelayAnimatedProjet}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                >
-                    <ProjetCards LesProjets={LesProjets} base={base} />
-                </motion.div>
+  useEffect(() => {
+    body.classList.add("hidden");
 
-                <div className="text-container">
-                    <BannerTxt />
-                    <LittleCross />
-                </div>
-            </section>
-        </>
-    );
+    setTimeout(() => {
+      body.classList.remove("hidden");
+    }, AnimationDuration * 1300);
+  }, []);
+
+  return (
+    <>
+      <TitlePage title={BasicTitle} />
+      <section id="projets">
+        <div className="background"></div>
+
+        <motion.div
+          className="container-projets"
+          variants={DelayAnimatedProjet}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+        >
+          <ProjetCards LesProjets={LesProjets} base={base} />
+        </motion.div>
+
+        <div className="text-container">
+          <BannerTxt />
+          <LittleCross />
+        </div>
+      </section>
+    </>
+  );
 }
