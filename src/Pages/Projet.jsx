@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 
+import { useEffect } from "react";
+
 import Projets from "../assets/Projets.json";
 
 import DescriptionProjet from "../components/Projet/DescriptionProjet";
@@ -16,20 +18,18 @@ import {
 } from "../components/Animations";
 import TitlePage from "../components/General/TitlePage";
 
-export default function Projet({ base }) {
+export default function Projet({ base, setErrorOff }) {
   const { name } = useParams();
 
   const projet = Projets.find((projet) => projet.name === name);
 
-  const ProjetsName = `${projet?.name}`;
-
   if (!projet) {
-    return <Error base={base} />;
+    return <Error base={base} setErrorOff={setErrorOff} />;
   }
 
   return (
     <>
-      <TitlePage title={ProjetsName} />
+      <TitlePage title={projet?.name} />
       <motion.section
         variants={AnimateProjetPage}
         initial="initial"

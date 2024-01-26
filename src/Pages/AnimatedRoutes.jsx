@@ -11,7 +11,7 @@ import { AnimationDuration } from "../components/Animations";
 
 import { useEffect } from "react";
 
-export default function AnimatedRoutes({ base }) {
+export default function AnimatedRoutes({ base, setErrorOff }) {
   const location = useLocation();
 
   const body = document.querySelector("body");
@@ -38,9 +38,12 @@ export default function AnimatedRoutes({ base }) {
           />
           <Route
             path={`${base}projets/:name`}
-            element={<Projet base={base} />}
+            element={<Projet base={base} setErrorOff={setErrorOff} />}
           />
-          <Route path="*" element={<Error base={base} />} />
+          <Route
+            path="*"
+            element={<Error base={base} setErrorOff={setErrorOff} />}
+          />
         </Routes>
       </AnimatePresence>
     </>

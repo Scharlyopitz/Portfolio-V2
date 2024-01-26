@@ -4,6 +4,8 @@ import Nav from "./components/General/Nav";
 
 import { useEffect } from "react";
 
+import { useState } from "react";
+
 function App() {
   const base = "/Portfolio-V2/";
 
@@ -13,11 +15,13 @@ function App() {
     });
   });
 
+  const [errorOff, setErrorOff] = useState(true);
+
   return (
     <>
-      <Nav base={base} />
-      <AnimatedRoutes base={base} />
-      <Contact />
+      {errorOff && <Nav base={base} />}
+      <AnimatedRoutes base={base} setErrorOff={setErrorOff} />
+      {errorOff && <Contact />}
     </>
   );
 }
