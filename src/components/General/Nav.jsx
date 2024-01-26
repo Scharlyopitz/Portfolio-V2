@@ -49,9 +49,7 @@ export default function Nav({ base }) {
                 onClick={(e) => handleClick(e)}
                 onMouseLeave={() => setData(false)}
               >
-                <motion.div
-                  className={`${data === idx ? "activeTransition" : ""}`}
-                >
+                <motion.div className={`${data === idx && "activeTransition"}`}>
                   {link.title.map((letter, idx) => {
                     return (
                       <p
@@ -66,10 +64,7 @@ export default function Nav({ base }) {
                   })}
                 </motion.div>
                 <motion.div
-                  className={`under-text ${
-                    data === idx ? "activeTransition" : ""
-                  } 
-                                        `}
+                  className={`under-text ${data === idx && "activeTransition"}`}
                 >
                   {link.title.map((letter, idx) => {
                     return (
