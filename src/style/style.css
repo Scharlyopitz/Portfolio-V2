@@ -547,6 +547,7 @@ header .orangeRed {
   border: 2px solid #ffffff;
   padding: 20px 50px;
   border-radius: 20px;
+  white-space: nowrap;
 }
 .error-container a, .error-container a::after {
   transition: 0.4s cubic-bezier(0.65, 0, 0.35, 1);
@@ -573,4 +574,9 @@ header .orangeRed {
 }
 .error .big404 p:nth-child(even) {
   color: #ff4500;
+}
+@media (max-width: 425px) {
+  .error .big404 {
+    font-size: 130px;
+  }
 }/*# sourceMappingURL=style.css.map */

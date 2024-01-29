@@ -15,6 +15,7 @@
       border: 2px solid $white;
       padding: 20px 50px;
       border-radius: 20px;
+      white-space: nowrap;
 
       &,
       &::after {
@@ -48,6 +49,12 @@
 
     p:nth-child(even) {
       color: $orange;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .big404 {
+      font-size: 130px;
     }
   }
 }
