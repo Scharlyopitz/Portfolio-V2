@@ -15,7 +15,9 @@ export default function Error({ base, setErrorOff }) {
     <>
       <TitlePage title={ErrorPage} />
       <div className="error-container">
-        <h1 className="error">Error 404 THIS PAGE doesn't exist !</h1>
+        <h1 className="error">
+          <p className="big">404</p> <br /> THIS PAGE doesn't exist !
+        </h1>
         <NavLink to={base} onClick={() => setErrorOff(true)}>
           Home Page
         </NavLink>
