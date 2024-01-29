@@ -23,7 +23,7 @@ export default function Error({ base, setErrorOff }) {
               return <p key={idx}>{number404}</p>;
             })}
           </div>
-          <br /> Oops, This Page Not Found!
+          <br /> <p className="txt404">Oops, This Page Not Found!</p>
         </h1>
         <NavLink to={base} onClick={() => setErrorOff(true)}>
           Home Page
