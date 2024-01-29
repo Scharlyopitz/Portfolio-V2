@@ -568,11 +568,11 @@ header .orangeRed {
   height: 100%;
   background: #ff4500;
 }
-.error .big404 {
+.error-container .big404 {
   font-size: 270px;
   display: flex;
 }
-.error .big404 p:nth-child(even) {
+.error-container .big404 p:nth-child(even) {
   color: #ff4500;
 }
 @media (max-width: 425px) {

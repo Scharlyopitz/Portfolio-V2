@@ -41,14 +41,14 @@
         background: $orange;
       }
     }
-  }
 
-  .big404 {
-    font-size: 270px;
-    display: flex;
+    .big404 {
+      font-size: 270px;
+      display: flex;
 
-    p:nth-child(even) {
-      color: $orange;
+      p:nth-child(even) {
+        color: $orange;
+      }
     }
   }
 
