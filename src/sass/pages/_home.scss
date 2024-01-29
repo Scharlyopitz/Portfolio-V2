@@ -1,58 +1,69 @@
 #home {
-    .text-container {
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        align-items: center;
-        justify-content: center;
+  .text-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
 
-        .name,
-        .firstName {
-            overflow: hidden;
-        }
-
-        .name {
-            display: flex;
-        }
-
-        .firstName {
-            margin-left: 5vw;
-            position: relative;
-            display: flex;
-
-            .after {
-                font-size: 1.1vw;
-                font-weight: 100;
-                letter-spacing: 0;
-                text-transform: initial;
-                position: absolute;
-                right: 0;
-                display: flex;
-
-                .hiddenLetter {
-                    overflow: hidden;
-                    &:nth-child(12) p {
-                        margin-left: 5px;
-                    }
-                }
-
-                div {
-                    display: flex;
-                }
-            }
-        }
-
-        justify-content: center;
-        h1 {
-            font-size: 8vw;
-            font-weight: 100;
-        }
+    .name,
+    .firstName {
+      overflow: hidden;
     }
+
+    .name {
+      display: flex;
+    }
+
+    .firstName {
+      margin-left: 5vw;
+      position: relative;
+      display: flex;
+
+      .after {
+        font-size: 1.1vw;
+        font-weight: 100;
+        letter-spacing: 0;
+        text-transform: initial;
+        position: absolute;
+        right: 0;
+        display: flex;
+
+        .hiddenLetter {
+          overflow: hidden;
+          &:nth-child(12) p {
+            margin-left: 5px;
+          }
+        }
+
+        div {
+          display: flex;
+        }
+      }
+    }
+
+    justify-content: center;
+    h1 {
+      font-size: 8vw;
+      font-weight: 100;
+    }
+  }
 }
 
-// @media (max-width: 540px) {
-//     height: 255px;
-// }
+@media (max-width: 425px) {
+  #home {
+    .text-container {
+      h1 {
+        font-size: 12vw;
+      }
+
+      .firstName .after {
+        font-size: 2.9vw;
+        top: -2px;
+      }
+    }
+  }
+}

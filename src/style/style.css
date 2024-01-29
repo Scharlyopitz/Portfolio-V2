@@ -201,6 +201,15 @@ header .orangeRed {
   font-weight: 100;
 }
 
+@media (max-width: 425px) {
+  #home .text-container h1 {
+    font-size: 12vw;
+  }
+  #home .text-container .firstName .after {
+    font-size: 2.9vw;
+    top: -2px;
+  }
+}
 #aboutMe .trait {
   z-index: 6;
   position: fixed;
