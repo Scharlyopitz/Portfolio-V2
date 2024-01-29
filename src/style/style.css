@@ -354,6 +354,9 @@ header .orangeRed {
   #aboutMe .about-description div p {
     font-size: 11px;
   }
+  #aboutMe .about-btn {
+    bottom: 25%;
+  }
   #aboutMe .cross-back {
     width: 50%;
   }
