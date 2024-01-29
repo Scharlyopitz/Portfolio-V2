@@ -309,6 +309,32 @@ header .orangeRed {
     background-position: -65% 0;
   }
 }
+@media (max-width: 1024px) {
+  #aboutMe .about-description div p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  #aboutMe .trait {
+    display: none;
+  }
+  #aboutMe .about-description {
+    flex-direction: column;
+    align-items: center;
+    top: 45%;
+  }
+  #aboutMe .about-description div p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 425px) {
+  #aboutMe .about-description div p {
+    font-size: 10px;
+  }
+  #aboutMe .cross-back {
+    width: 50%;
+  }
+}
 
 #projets {
   display: flex;

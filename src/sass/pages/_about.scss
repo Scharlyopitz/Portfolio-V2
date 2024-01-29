@@ -150,4 +150,40 @@
       background-position: -65% 0;
     }
   }
+
+  @media (max-width: 1024px) {
+    .about-description {
+      div p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .trait {
+      display: none;
+    }
+
+    .about-description {
+      flex-direction: column;
+      align-items: center;
+      top: 45%;
+
+      div p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    .about-description {
+      div p {
+        font-size: 10px;
+      }
+    }
+
+    .cross-back {
+      width: 50%;
+    }
+  }
 }
