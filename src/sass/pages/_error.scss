@@ -42,7 +42,12 @@
     }
   }
 
-  .big {
+  .big404 {
     font-size: 270px;
+    display: flex;
+
+    p:nth-child(even) {
+      color: $orange;
+    }
   }
 }

@@ -567,6 +567,10 @@ header .orangeRed {
   height: 100%;
   background: #ff4500;
 }
-.error .big {
+.error .big404 {
   font-size: 270px;
+  display: flex;
+}
+.error .big404 p:nth-child(even) {
+  color: #ff4500;
 }/*# sourceMappingURL=style.css.map */
