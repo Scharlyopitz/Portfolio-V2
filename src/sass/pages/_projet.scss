@@ -1,164 +1,177 @@
 #projet {
-    background: $vert;
+  background: $vert;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .cross,
+  .img-container,
+  .animate-text-container,
+  .txtProjet {
     z-index: 2;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  }
 
-    .cross,
-    .img-container,
-    .animate-text-container,
-    .txtProjet {
-        z-index: 2;
-        position: fixed;
+  .img-container {
+    overflow: hidden;
+    pointer-events: none;
+    top: 60%;
+    transform: translateY(-50%);
+    right: 10%;
+    width: 400px;
+    height: 500px;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
     }
+  }
 
-    .img-container {
-        overflow: hidden;
-        pointer-events: none;
-        top: 60%;
-        transform: translateY(-50%);
-        right: 10%;
-        width: 400px;
-        height: 500px;
+  .cross {
+    z-index: 3;
+    overflow: hidden;
+    top: 50px;
+    left: 50px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        img {
-            width: 100%;
-            height: 100%;
+    .svg {
+      width: 100%;
+      height: 100%;
 
-            object-fit: cover;
-        }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        transform: translate(-50%, -50%) rotate(135deg);
+        background: $white;
+        border-radius: 20px;
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
     }
+  }
 
-    .cross {
-        z-index: 3;
-        overflow: hidden;
-        top: 50px;
-        left: 50px;
-        font-size: 20px;
-        width: 30px;
-        height: 30px;
+  .buttons-container {
+    display: flex;
+    justify-content: space-around;
+
+    .parent-btn {
+      overflow: hidden;
+      margin: 10px 0;
+      font-size: 25px;
+      .button {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
 
-        .svg {
-            width: 100%;
-            height: 100%;
-
-            &::before,
-            &::after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 100%;
-                height: 2px;
-                transform: translate(-50%, -50%) rotate(135deg);
-                background: $white;
-                border-radius: 20px;
-            }
-
-            &::after {
-                transform: translate(-50%, -50%) rotate(45deg);
-            }
+        &:hover svg {
+          opacity: 1;
         }
+      }
+    }
+  }
+
+  .animate-text-container {
+    display: flex;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-size: 120px;
+    width: 65%;
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 11%,
+      rgba(0, 0, 0, 1) 91%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    white-space: nowrap;
+
+    .anime {
+      display: flex;
+      animation: animeTxt 30s linear infinite;
     }
 
-    .buttons-container {
+    .P {
+      &4 {
+        animation-duration: 15s;
+      }
+    }
+
+    @keyframes animeTxt {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .point-container,
+    .words-container {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+
+    .words-container {
+      display: flex;
+
+      &:nth-child(odd) {
+        font-weight: 100 !important;
+      }
+
+      .word {
         display: flex;
-        justify-content: space-around;
-
-        .parent-btn {
-            overflow: hidden;
-            margin: 10px 0;
-            font-size: 25px;
-            .button {
-                display: flex;
-                justify-content: end;
-                align-items: center;
-
-                &:hover svg {
-                    opacity: 1;
-                }
-            }
-        }
+        margin: 10px;
+      }
     }
+  }
 
+  .txtProjet {
+    top: 60%;
+    transform: translateY(-50%);
+    left: 10%;
+    font-size: 25px;
+
+    .projet_description {
+      overflow: hidden;
+
+      &_trait {
+        width: 70%;
+        height: 1px;
+        background: $white;
+        margin: 50px auto;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #projet {
     .animate-text-container {
-        display: flex;
-        left: 50%;
-        top: 10%;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
-        font-size: 120px;
-        width: 65%;
-        -webkit-mask-image: linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 1) 0%,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(0, 0, 0, 1) 11%,
-            rgba(0, 0, 0, 1) 91%,
-            rgba(255, 255, 255, 0) 100%
-        );
+      width: 95%;
 
-        white-space: nowrap;
-
-        .anime {
-            display: flex;
-            animation: animeTxt 30s linear infinite;
-        }
-
-        .P {
-            &4 {
-                animation-duration: 15s;
-            }
-        }
-
-        @keyframes animeTxt {
-            0% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        .point-container,
-        .words-container {
-            font-weight: 600;
-        }
-
-        .words-container {
-            display: flex;
-
-            &:nth-child(odd) {
-                font-weight: 100 !important;
-            }
-
-            .word {
-                display: flex;
-                margin: 10px;
-            }
-        }
+      .anime {
+        font-size: 12vw;
+      }
     }
-
-    .txtProjet {
-        top: 60%;
-        transform: translateY(-50%);
-        left: 10%;
-        font-size: 25px;
-
-        .projet_description {
-            overflow: hidden;
-
-            &_trait {
-                width: 70%;
-                height: 1px;
-                background: $white;
-                margin: 50px auto;
-            }
-        }
-    }
+  }
 }
