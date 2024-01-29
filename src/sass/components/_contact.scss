@@ -1,16 +1,23 @@
 #contact {
-    z-index: 3;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
+  z-index: 3;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
 
-    .contact-link-container {
-        font-size: 12px;
-        font-weight: 500;
-        text-align: end;
-        overflow: hidden;
-        &:hover svg {
-            opacity: 1;
-        }
+  .contact-link-container {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: end;
+    overflow: hidden;
+    &:hover svg {
+      opacity: 1;
     }
+  }
+}
+
+@media (max-width: 425px) {
+  #contact {
+    bottom: 25px;
+    right: 25px;
+  }
 }

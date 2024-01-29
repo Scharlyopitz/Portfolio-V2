@@ -99,6 +99,12 @@ header .orangeRed {
   opacity: 1;
 }
 
+@media (max-width: 425px) {
+  #contact {
+    bottom: 25px;
+    right: 25px;
+  }
+}
 .littleCross {
   display: flex;
   height: 130px;
