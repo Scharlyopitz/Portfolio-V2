@@ -326,10 +326,17 @@ header .orangeRed {
   #aboutMe .about-description div p {
     font-size: 13px;
   }
+  #aboutMe .cross-back-container {
+    bottom: 5%;
+  }
 }
 @media (max-width: 425px) {
+  #aboutMe .about-description {
+    padding: 10px;
+    text-align: center;
+  }
   #aboutMe .about-description div p {
-    font-size: 10px;
+    font-size: 11px;
   }
   #aboutMe .cross-back {
     width: 50%;

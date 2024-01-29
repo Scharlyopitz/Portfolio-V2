@@ -173,12 +173,18 @@
         font-size: 13px;
       }
     }
+
+    .cross-back-container {
+      bottom: 5%;
+    }
   }
 
   @media (max-width: 425px) {
     .about-description {
+      padding: 10px;
+      text-align: center;
       div p {
-        font-size: 10px;
+        font-size: 11px;
       }
     }
 
