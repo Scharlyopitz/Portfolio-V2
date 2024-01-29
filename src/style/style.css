@@ -577,6 +577,9 @@ header .orangeRed {
 }
 @media (max-width: 425px) {
   .error .big404 {
-    font-size: 130px;
+    font-size: 135px;
+  }
+  .error .txt404 {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
