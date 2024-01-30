@@ -449,6 +449,11 @@ header .orangeRed {
   overflow: hidden;
 }
 
+@media (max-width: 425px) {
+  #projets .text-container {
+    display: none;
+  }
+}
 #projet {
   background: #192929;
   z-index: 2;

@@ -1,107 +1,115 @@
 #projets {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    .background {
-        background: $original-grandient;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
+  .background {
+    background: $original-grandient;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container-projets {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-items: center;
+    width: 68%;
+    height: 300vh;
+    margin: 15vh 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    img {
+      width: 100%;
+      height: 140%;
+      pointer-events: none;
+      object-fit: cover;
     }
 
-    .container-projets {
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        display: grid;
-        justify-items: center;
-        width: 68%;
-        height: 300vh;
-        margin: 15vh 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-
-        img {
-            width: 100%;
-            height: 140%;
-            pointer-events: none;
-            object-fit: cover;
-        }
-
-        .projet {
-            &-1,
-            &-2,
-            &-3,
-            &-4,
-            &-5,
-            &-6 {
-                pointer-events: none;
-                width: 400px;
-                height: 500px;
-                display: flex;
-                justify-content: center;
-                cursor: pointer;
-                position: absolute;
-            }
-
-            &-1 {
-                top: 0;
-                left: 0;
-            }
-
-            &-3 {
-                margin-top: 300px;
-                top: 10%;
-                right: 0;
-            }
-
-            &-2 {
-                top: 12%;
-                left: 50%;
-
-                width: 300px;
-                height: 400px;
-            }
-
-            &-5 {
-                bottom: 20%;
-                left: 0;
-            }
-
-            &-4 {
-                bottom: 50%;
-                right: 50%;
-
-                width: 300px;
-                height: 400px;
-            }
-
-            &-6 {
-                bottom: 0;
-                right: 10%;
-            }
-        }
-    }
-
-    .text-container {
-        position: fixed;
-        bottom: 10%;
-        width: 100%;
+    .projet {
+      &-1,
+      &-2,
+      &-3,
+      &-4,
+      &-5,
+      &-6 {
+        pointer-events: none;
+        width: 400px;
+        height: 500px;
         display: flex;
-        padding: 0 50px;
-        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+      }
 
-        .title {
-            font-size: 140px;
-            margin-right: 50px;
-            display: flex;
+      &-1 {
+        top: 0;
+        left: 0;
+      }
 
-            div {
-                overflow: hidden;
-            }
-        }
+      &-3 {
+        margin-top: 300px;
+        top: 10%;
+        right: 0;
+      }
+
+      &-2 {
+        top: 12%;
+        left: 50%;
+
+        width: 300px;
+        height: 400px;
+      }
+
+      &-5 {
+        bottom: 20%;
+        left: 0;
+      }
+
+      &-4 {
+        bottom: 50%;
+        right: 50%;
+
+        width: 300px;
+        height: 400px;
+      }
+
+      &-6 {
+        bottom: 0;
+        right: 10%;
+      }
     }
+  }
+
+  .text-container {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+
+    .title {
+      font-size: 140px;
+      margin-right: 50px;
+      display: flex;
+
+      div {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #projets {
+    .text-container {
+      display: none;
+    }
+  }
 }
