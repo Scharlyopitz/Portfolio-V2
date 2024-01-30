@@ -449,7 +449,10 @@ header .orangeRed {
   overflow: hidden;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 1024px) {
+  #projets .container-projets {
+    width: 100%;
+  }
   #projets .text-container {
     display: none;
   }

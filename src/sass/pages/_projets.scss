@@ -106,8 +106,12 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 1024px) {
   #projets {
+    .container-projets {
+      width: 100%;
+    }
+
     .text-container {
       display: none;
     }
