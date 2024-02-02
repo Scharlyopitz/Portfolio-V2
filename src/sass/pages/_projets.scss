@@ -111,6 +111,7 @@
     .container-projets {
       width: 100%;
       grid-template-columns: 1fr;
+      margin: 0;
 
       .projet {
         &-1,
