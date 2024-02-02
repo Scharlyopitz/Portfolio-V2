@@ -456,10 +456,16 @@ header .orangeRed {
   }
   #projets .container-projets .projet-1, #projets .container-projets .projet-2, #projets .container-projets .projet-3, #projets .container-projets .projet-4, #projets .container-projets .projet-5, #projets .container-projets .projet-6 {
     width: 100%;
+    height: 100%;
     position: initial;
   }
   #projets .text-container {
     display: none;
+  }
+}
+@media (max-width: 425px) {
+  #projets .container-projets .projet-1, #projets .container-projets .projet-2, #projets .container-projets .projet-3, #projets .container-projets .projet-4, #projets .container-projets .projet-5, #projets .container-projets .projet-6 {
+    height: 500px;
   }
 }
 #projet {
