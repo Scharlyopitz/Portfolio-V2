@@ -12,13 +12,17 @@ import {
 import { motion } from "framer-motion";
 import TitlePage from "../components/General/TitlePage";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Projets({ base, BasicTitle }) {
   const body = document.querySelector("body");
 
+  const [responsive, setResponsive] = useState(null);
+
   useEffect(() => {
     body.classList.add("hidden");
+    window.innerWidth < 1024 && setResponsive(false);
+    window.innerWidth > 1024 && setResponsive(true);
 
     setTimeout(() => {
       body.classList.remove("hidden");
@@ -38,7 +42,11 @@ export default function Projets({ base, BasicTitle }) {
           animate="animate"
           exit="exit"
         >
-          <ProjetCards LesProjets={LesProjets} base={base} />
+          <ProjetCards
+            LesProjets={LesProjets}
+            base={base}
+            responsive={responsive}
+          />
         </motion.div>
 
         <div className="text-container">
