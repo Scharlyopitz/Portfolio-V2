@@ -53,10 +53,17 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   #home {
     .text-container {
       top: 40%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #home {
+    .text-container {
       h1 {
         font-size: 12vw;
       }
