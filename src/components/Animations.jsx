@@ -9,114 +9,114 @@ export const easeInExpo = [0.7, 0, 0.84, 0];
 const DelayTransitionPage = 0.5;
 
 export const AnimatedName = {
-    initial: {
-        y: "100%",
-        opacity: 0,
-    },
-    animate: {
-        y: 0,
-        opacity: 1,
-        transition: { duration: 1, ease: easeOutCubic },
-    },
-    exit: {
-        y: "-100%",
-        opacity: 0,
-        transition: { duration: 1, ease: easeInOutQuint },
-    },
+  initial: {
+    y: "100%",
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 1, ease: easeOutCubic },
+  },
+  exit: {
+    y: "-100%",
+    opacity: 0,
+    transition: { duration: 1, ease: easeInOutQuint },
+  },
 };
 
 export const AnimatedNameDelay = {
-    animate: {
-        transition: {
-            delayChildren: DelayTransitionPage,
-            staggerChildren: 0.04,
-        },
+  animate: {
+    transition: {
+      delayChildren: DelayTransitionPage,
+      staggerChildren: 0.04,
     },
-    exit: {
-        transition: { staggerChildren: 0.05, staggerDirection: -1 },
-    },
+  },
+  exit: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
 };
 
 export const AnimatedFirstNameDelay = {
-    animate: {
-        transition: {
-            delayChildren: DelayTransitionPage,
-            staggerChildren: 0.03,
-        },
+  animate: {
+    transition: {
+      delayChildren: DelayTransitionPage,
+      staggerChildren: 0.03,
     },
-    exit: {
-        transition: { staggerChildren: 0.03, staggerDirection: -1 },
-    },
+  },
+  exit: {
+    transition: { staggerChildren: 0.03, staggerDirection: -1 },
+  },
 };
 
 // ANIMATION AFTER HOME PAGE
 
 export const AnimatedAfter = {
-    initial: {
-        x: "-110%",
-        opacity: 0,
+  initial: {
+    x: "-110%",
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: easeOutCubic,
     },
-    animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            duration: 1,
-            ease: easeOutCubic,
-        },
-    },
-    exit: {
-        y: "-110%",
-        opacity: 0,
-        transition: { duration: 0.6, ease: easeInOutQuint },
-    },
+  },
+  exit: {
+    y: "-110%",
+    opacity: 0,
+    transition: { duration: 0.6, ease: easeInOutQuint },
+  },
 };
 
 export const DelayAfter = {
-    animate: {
-        transition: { delayChildren: 0.8 },
-    },
-    exit: {
-        transition: { staggerChildren: 0.005, staggerDirection: -1 },
-    },
+  animate: {
+    transition: { delayChildren: 0.8 },
+  },
+  exit: {
+    transition: { staggerChildren: 0.005, staggerDirection: -1 },
+  },
 };
 
 // ANIMATION CONTACT
 
 export const AnimatedContact = {
-    initial: {
-        y: "100%",
+  initial: {
+    y: "100%",
+  },
+  animate: {
+    y: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.5,
+      ease: easeOutCubic,
     },
-    animate: {
-        y: 0,
-        transition: {
-            delay: 0.5,
-            duration: 0.5,
-            ease: easeOutCubic,
-        },
+  },
+  exit: {
+    y: "100%",
+    transition: {
+      duration: 0.5,
+      ease: easeOutCubic,
     },
-    exit: {
-        y: "100%",
-        transition: {
-            duration: 0.5,
-            ease: easeOutCubic,
-        },
-    },
+  },
 };
 
 // ANIMATION NAVBAR
 
 export const AnimatedNav = {
-    initial: {
-        y: "100%",
+  initial: {
+    y: "130%",
+  },
+  animate: {
+    y: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.5,
+      ease: easeOutCubic,
     },
-    animate: {
-        y: 0,
-        transition: {
-            delay: 0.5,
-            duration: 0.5,
-            ease: easeOutCubic,
-        },
-    },
+  },
 };
 
 // ANIMATIONS PAGE PROJETS
@@ -126,72 +126,72 @@ export const AnimatedNav = {
 export const AnimationDuration = 1;
 
 export const AnimatedProjetsTxt = {
-    initial: {
-        x: "-100%",
+  initial: {
+    x: "-100%",
+  },
+  animate: {
+    x: 0,
+    transition: {
+      delay: DelayTransitionPage,
+      duration: 0.8,
+      ease: easeOutCubic,
     },
-    animate: {
-        x: 0,
-        transition: {
-            delay: DelayTransitionPage,
-            duration: 0.8,
-            ease: easeOutCubic,
-        },
-    },
-    exit: {
-        x: "100%",
-        transition: { duration: 0.8, ease: easeInOutQuart },
-    },
+  },
+  exit: {
+    x: "100%",
+    transition: { duration: 0.8, ease: easeInOutQuart },
+  },
 };
 
 // ANIMATION LITTLECROSS
 
 export const DelayCross = {
-    animate: {
-        transition: {
-            delayChildren: DelayTransitionPage,
-        },
+  animate: {
+    transition: {
+      delayChildren: DelayTransitionPage,
     },
+  },
 };
 
 export const DelayCrossCOntainer = {
-    animate: {
-        transition: {
-            staggerChildren: 0.015,
-        },
+  animate: {
+    transition: {
+      staggerChildren: 0.015,
     },
-    exit: {
-        transition: {
-            staggerChildren: 0.015,
-        },
+  },
+  exit: {
+    transition: {
+      staggerChildren: 0.015,
     },
+  },
 };
 
 export const AnimatedCrossWidth = {
-    initial: {
-        width: 0,
-    },
-    animate: {
-        width: "50%",
-        transition: { duration: 1.5, ease: easeOutQuint },
-    },
-    exit: {
-        width: 0,
-        transition: { duration: 0.5, ease: easeInCubic },
-    },
+  initial: {
+    width: 0,
+  },
+  animate: {
+    width: "50%",
+    transition: { duration: 1.5, ease: easeOutQuint },
+  },
+  exit: {
+    width: 0,
+    transition: { duration: 0.5, ease: easeInCubic },
+  },
 };
 
 export const AnimatedCrossHeight = {
-    initial: {
-        height: 0,
-    },
-    animate: {
-        height: "50%",
-        transition: { duration: 1.5, ease: easeOutQuint },
-    },
-    exit: {
-        height: 0,
-        transition: { duration: 0.5, ease: easeInCubic },
-    },
+  initial: {
+    height: 0,
+  },
+  animate: {
+    height: "50%",
+    transition: { duration: 1.5, ease: easeOutQuint },
+  },
+  exit: {
+    height: 0,
+    transition: { duration: 0.5, ease: easeInCubic },
+  },
 };
 
 // ANIMATION DES PROJETS
@@ -201,35 +201,35 @@ const animatedPath = "polygon(0 100%, 100% 100%, 100% 0, 0 0)";
 const exitPath = "polygon(0 0, 100% 0, 100% 0, 0 0)";
 
 export const AnimatedProjet = {
-    initial: {
-        opacity: 0,
-        clipPath: initialPath,
+  initial: {
+    opacity: 0,
+    clipPath: initialPath,
+  },
+  animate: {
+    opacity: 1,
+    clipPath: animatedPath,
+    transition: {
+      duration: AnimationDuration,
+      ease: easeOutQuint,
     },
-    animate: {
-        opacity: 1,
-        clipPath: animatedPath,
-        transition: {
-            duration: AnimationDuration,
-            ease: easeOutQuint,
-        },
+  },
+  exit: {
+    clipPath: exitPath,
+    opacity: 0,
+    transition: {
+      duration: AnimationDuration,
+      ease: easeInOutQuart,
     },
-    exit: {
-        clipPath: exitPath,
-        opacity: 0,
-        transition: {
-            duration: AnimationDuration,
-            ease: easeInOutQuart,
-        },
-    },
+  },
 };
 
 export const DelayAnimatedProjet = {
-    animate: {
-        transition: {
-            delayChildren: 0.7,
-            staggerChildren: 0.05,
-        },
+  animate: {
+    transition: {
+      delayChildren: 0.7,
+      staggerChildren: 0.05,
     },
+  },
 };
 
 // PAGE PROJET
@@ -237,23 +237,23 @@ export const DelayAnimatedProjet = {
 // ANIMATION TRANSITION PAGE
 
 export const AnimateProjetPage = {
-    initial: {
-        clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
+  initial: {
+    clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
+  },
+  animate: {
+    clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",
+    transition: {
+      duration: 1.2,
+      ease: easeInOutQuart,
     },
-    animate: {
-        clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",
-        transition: {
-            duration: 1.2,
-            ease: easeInOutQuart,
-        },
+  },
+  exit: {
+    clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
+    transition: {
+      duration: 1.2,
+      ease: easeInOutCubic,
     },
-    exit: {
-        clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
-        transition: {
-            duration: 1.2,
-            ease: easeInOutCubic,
-        },
-    },
+  },
 };
 
 const DlayForProjet = 0.7;
@@ -261,249 +261,249 @@ const DlayForProjet = 0.7;
 // ANIMATION  CROIX
 
 export const AnimateArrow = {
-    initial: {
-        y: "100%",
-    },
-    animate: {
-        y: 0,
+  initial: {
+    y: "100%",
+  },
+  animate: {
+    y: 0,
 
-        transition: {
-            delay: DlayForProjet,
-            duration: 0.5,
-            ease: easeInOutCubic,
-        },
+    transition: {
+      delay: DlayForProjet,
+      duration: 0.5,
+      ease: easeInOutCubic,
     },
-    exit: {
-        y: "100%",
-        transition: {
-            duration: 0.8,
-            ease: easeInOutQuint,
-        },
+  },
+  exit: {
+    y: "100%",
+    transition: {
+      duration: 0.8,
+      ease: easeInOutQuint,
     },
+  },
 };
 
 // ANIMATION TEXTE
 
 export const AnimateProjetTxt = {
-    initial: {
-        y: "100%",
+  initial: {
+    y: "100%",
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: easeOutCubic,
     },
-    animate: {
-        y: 0,
-        transition: {
-            duration: 0.7,
-            ease: easeOutCubic,
-        },
+  },
+  exit: {
+    y: "100%",
+    transition: {
+      duration: 0.55,
+      ease: easeInExpo,
     },
-    exit: {
-        y: "100%",
-        transition: {
-            duration: 0.55,
-            ease: easeInExpo,
-        },
-    },
+  },
 };
 
 export const AnimatedProjetChildren = {
-    animate: {
-        transition: {
-            delayChildren: DlayForProjet,
-            staggerChildren: 0.02,
-        },
+  animate: {
+    transition: {
+      delayChildren: DlayForProjet,
+      staggerChildren: 0.02,
     },
-    exit: {
-        transition: {
-            staggerChildren: 0.02,
-        },
+  },
+  exit: {
+    transition: {
+      staggerChildren: 0.02,
     },
+  },
 };
 
 // ANIMATION POINT
 
 export const AnimateDot = {
-    initial: {
-        y: "100%",
+  initial: {
+    y: "100%",
+  },
+  animate: {
+    y: 0,
+    transition: {
+      delay: DlayForProjet,
+      duration: 0.7,
+      ease: easeOutCubic,
     },
-    animate: {
-        y: 0,
-        transition: {
-            delay: DlayForProjet,
-            duration: 0.7,
-            ease: easeOutCubic,
-        },
+  },
+  exit: {
+    y: "100%",
+    transition: {
+      duration: AnimationDuration,
+      ease: easeInOutQuint,
     },
-    exit: {
-        y: "100%",
-        transition: {
-            duration: AnimationDuration,
-            ease: easeInOutQuint,
-        },
-    },
+  },
 };
 
 // ANIMATION DESCRIPTION
 
 export const AnimateProjetDescription = {
-    initial: {
-        y: "100%",
+  initial: {
+    y: "100%",
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: easeOutCubic,
     },
-    animate: {
-        y: 0,
-        transition: {
-            duration: 0.7,
-            ease: easeOutCubic,
-        },
+  },
+  exit: {
+    y: "110%",
+    transition: {
+      duration: 0.5,
+      ease: easeInExpo,
     },
-    exit: {
-        y: "110%",
-        transition: {
-            duration: 0.5,
-            ease: easeInExpo,
-        },
-    },
+  },
 };
 
 export const DelayProjetDescription = {
-    animate: {
-        transition: {
-            delayChildren: DlayForProjet,
-            staggerChildren: 0.05,
-        },
+  animate: {
+    transition: {
+      delayChildren: DlayForProjet,
+      staggerChildren: 0.05,
     },
-    exit: {
-        transition: {
-            staggerDirection: -1,
-            staggerChildren: 0.03,
-        },
+  },
+  exit: {
+    transition: {
+      staggerDirection: -1,
+      staggerChildren: 0.03,
     },
+  },
 };
 
 // ANIMATION TRAIT
 
 export const AnimateProjetTrait = {
-    initial: {
-        scale: 0,
+  initial: {
+    scale: 0,
+  },
+  animate: {
+    scale: 1,
+    transition: {
+      duration: 0.7,
+      ease: easeOutCubic,
     },
-    animate: {
-        scale: 1,
-        transition: {
-            duration: 0.7,
-            ease: easeOutCubic,
-        },
+  },
+  exit: {
+    scale: 0,
+    transition: {
+      duration: 0.5,
+      ease: easeInExpo,
     },
-    exit: {
-        scale: 0,
-        transition: {
-            duration: 0.5,
-            ease: easeInExpo,
-        },
-    },
+  },
 };
 
 // ANIMATION PAGE ABOUT
 
 export const PageAboutAnimation = {
-    initial: {
-        y: "calc(-100% - 100px)",
+  initial: {
+    y: "calc(-100% - 100px)",
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: easeInOutCubic,
     },
-    animate: {
-        y: 0,
-        transition: {
-            duration: 0.8,
-            ease: easeInOutCubic,
-        },
+  },
+  exit: {
+    y: "calc(-100% - 100px)",
+    transition: {
+      duration: 0.8,
+      delay: 0.3,
+      ease: easeInOutCubic,
     },
-    exit: {
-        y: "calc(-100% - 100px)",
-        transition: {
-            duration: 0.8,
-            delay: 0.3,
-            ease: easeInOutCubic,
-        },
-    },
+  },
 };
 
 export const PageAboutDescription = {
-    initial: {
-        y: "120%",
+  initial: {
+    y: "120%",
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: easeInOutCubic,
     },
-    animate: {
-        y: 0,
-        transition: {
-            duration: 0.7,
-            ease: easeInOutCubic,
-        },
+  },
+  exit: {
+    y: "120%",
+    transition: {
+      duration: 0.5,
+      ease: easeInOutCubic,
     },
-    exit: {
-        y: "120%",
-        transition: {
-            duration: 0.5,
-            ease: easeInOutCubic,
-        },
-    },
+  },
 };
 
 export const PageAboutDescriptionDelay = {
-    animate: {
-        transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.03,
-        },
+  animate: {
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.03,
     },
-    exit: {
-        transition: {
-            staggerDirection: -1,
-            staggerChildren: 0.03,
-        },
+  },
+  exit: {
+    transition: {
+      staggerDirection: -1,
+      staggerChildren: 0.03,
     },
+  },
 };
 
 // SVG
 
 const initialSvgPath = `M0 0 Q ${window.innerWidth / 2} 200 ${
-    window.innerWidth
+  window.innerWidth
 } 0`;
 
 const animatedSvgPath = `M0 0 Q ${window.innerWidth / 2} 0 ${
-    window.innerWidth
+  window.innerWidth
 } 0`;
 
 export const AnimationSvg = {
-    initial: { d: initialSvgPath },
-    animate: {
-        d: animatedSvgPath,
-        transition: {
-            duration: AnimationDuration,
-            ease: easeInOutCubic,
-        },
+  initial: { d: initialSvgPath },
+  animate: {
+    d: animatedSvgPath,
+    transition: {
+      duration: AnimationDuration,
+      ease: easeInOutCubic,
     },
-    exit: {
-        d: initialSvgPath,
-        transition: {
-            duration: 0.6,
-            ease: easeInOutCubic,
-            delay: 0.3,
-        },
+  },
+  exit: {
+    d: initialSvgPath,
+    transition: {
+      duration: 0.6,
+      ease: easeInOutCubic,
+      delay: 0.3,
     },
+  },
 };
 
 // ANIMATION BTN ABOUT ME
 
 export const AnimatedABoutBtn = {
-    initial: {
-        y: "100%",
-    },
-    animate: {
-        y: 0,
+  initial: {
+    y: "100%",
+  },
+  animate: {
+    y: 0,
 
-        transition: {
-            duration: AnimationDuration,
-            ease: easeInOutQuint,
-            delay: 0.8,
-        },
+    transition: {
+      duration: AnimationDuration,
+      ease: easeInOutQuint,
+      delay: 0.8,
     },
-    exit: {
-        y: "-100%",
-        transition: { duration: AnimationDuration, ease: easeInOutQuint },
-    },
+  },
+  exit: {
+    y: "-100%",
+    transition: { duration: AnimationDuration, ease: easeInOutQuint },
+  },
 };

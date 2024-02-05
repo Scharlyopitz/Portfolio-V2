@@ -83,6 +83,14 @@ header .orangeRed {
   color: #ff4500;
 }
 
+@media (max-width: 425px) {
+  header {
+    margin-top: 0;
+    padding: 10px 0;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+}
 #contact {
   z-index: 3;
   position: fixed;
