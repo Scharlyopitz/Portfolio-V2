@@ -113,6 +113,7 @@
       height: auto;
       grid-template-columns: 1fr;
       margin: 0;
+      overflow: hidden;
 
       .projet {
         &-1,

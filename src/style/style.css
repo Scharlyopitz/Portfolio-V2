@@ -463,6 +463,7 @@ header .orangeRed {
     height: auto;
     grid-template-columns: 1fr;
     margin: 0;
+    overflow: hidden;
   }
   #projets .container-projets .projet-1, #projets .container-projets .projet-2, #projets .container-projets .projet-3, #projets .container-projets .projet-4, #projets .container-projets .projet-5, #projets .container-projets .projet-6 {
     width: 100%;
