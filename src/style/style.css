@@ -452,6 +452,7 @@ header .orangeRed {
 @media (max-width: 1024px) {
   #projets .container-projets {
     width: 100%;
+    height: auto;
     grid-template-columns: 1fr;
     margin: 0;
   }
