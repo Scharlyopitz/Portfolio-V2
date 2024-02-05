@@ -86,7 +86,7 @@ header .orangeRed {
 @media (max-width: 425px) {
   header {
     margin-top: 0;
-    padding: 10px 0;
+    padding: 20px 0;
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
   }

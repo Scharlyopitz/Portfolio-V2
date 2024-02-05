@@ -107,7 +107,7 @@ export const AnimatedContact = {
 
 export const AnimatedNav = {
   initial: {
-    y: "130%",
+    y: "190%",
   },
   animate: {
     y: 0,
