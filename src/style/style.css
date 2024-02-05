@@ -365,11 +365,13 @@ header .orangeRed {
   #aboutMe .about-description div p {
     font-size: 11px;
   }
-  #aboutMe .about-btn {
-    bottom: 35%;
-  }
   #aboutMe .cross-back {
     width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #aboutMe .about-btn {
+    bottom: 35%;
   }
 }
 

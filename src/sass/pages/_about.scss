@@ -190,12 +190,14 @@
       }
     }
 
-    .about-btn {
-      bottom: 35%;
-    }
-
     .cross-back {
       width: 50%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-btn {
+      bottom: 35%;
     }
   }
 }
