@@ -23,7 +23,7 @@ export default function ProjetCard({ base, projet, idx, responsive }) {
     setDataClick(parseInt(e.dataset.id));
   }
 
-  const isResponsive = responsive && slowScroll;
+  const isResponsiveScroll = responsive && slowScroll;
 
   return (
     <>
@@ -35,7 +35,9 @@ export default function ProjetCard({ base, projet, idx, responsive }) {
       >
         <motion.div
           style={{
-            y: (idx + 1 == 2 && isResponsive) || (idx + 1 == 4 && isResponsive),
+            y:
+              (idx + 1 == 2 && isResponsiveScroll) ||
+              (idx + 1 == 4 && isResponsiveScroll),
 
             filter: dataClick === idx + 1 ? "grayscale(0)" : "grayscale(1)",
           }}
