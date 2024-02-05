@@ -347,6 +347,9 @@ header .orangeRed {
   #aboutMe .trait {
     display: none;
   }
+  #aboutMe .about-btn {
+    bottom: 35%;
+  }
   #aboutMe .about-description {
     flex-direction: column;
     align-items: center;
@@ -369,11 +372,6 @@ header .orangeRed {
   }
   #aboutMe .cross-back {
     width: 50%;
-  }
-}
-@media (max-width: 768px) {
-  #aboutMe .about-btn {
-    bottom: 35%;
   }
 }
 
