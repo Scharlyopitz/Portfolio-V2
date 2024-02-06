@@ -18,13 +18,13 @@ import {
 } from "../components/Animations";
 import TitlePage from "../components/General/TitlePage";
 
-export default function Projet({ base, setErrorOff }) {
+export default function Projet({ setErrorOff }) {
   const { name } = useParams();
 
   const projet = Projets.find((projet) => projet.name === name);
 
   if (!projet) {
-    return <Error base={base} setErrorOff={setErrorOff} />;
+    return <Error setErrorOff={setErrorOff} />;
   }
 
   return (
@@ -64,7 +64,7 @@ export default function Projet({ base, setErrorOff }) {
             alt={projet?.image}
           />
         </motion.div>
-        <Cross base={base} />
+        <Cross />
         <TextAnime projet={projet} />
         <DescriptionProjet projet={projet} />
       </motion.section>

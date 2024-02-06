@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import { useEffect } from "react";
 
-export default function Error({ base, setErrorOff }) {
+export default function Error({ setErrorOff }) {
   const ErrorPage = "Error 404 !";
 
   const numbers404 = "404".split("");
@@ -25,7 +25,7 @@ export default function Error({ base, setErrorOff }) {
           </div>
           <br /> <p className="txt404">Oops, This Page Not Found!</p>
         </h1>
-        <NavLink to={base} onClick={() => setErrorOff(true)}>
+        <NavLink to="/" onClick={() => setErrorOff(true)}>
           Home Page
         </NavLink>
       </div>

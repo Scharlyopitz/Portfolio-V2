@@ -6,15 +6,15 @@ import { AnimatedNav } from "../Animations";
 
 import { useState } from "react";
 
-export default function Nav({ base }) {
+export default function Nav() {
   const links = [
     {
       title: "Home".split(""),
-      rederect: base,
+      rederect: "/",
     },
     {
       title: "Projets".split(""),
-      rederect: `${base}projets`,
+      rederect: "/projets",
     },
   ];
 

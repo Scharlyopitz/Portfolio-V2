@@ -1,6 +1,6 @@
 import ProjetCard from "./ProjetCard";
 
-export default function ProjetCards({ LesProjets, base, responsive }) {
+export default function ProjetCards({ LesProjets, responsive }) {
   return (
     <>
       {LesProjets.map((projet, idx) => {
@@ -9,7 +9,6 @@ export default function ProjetCards({ LesProjets, base, responsive }) {
             key={idx}
             projet={projet}
             idx={idx}
-            base={base}
             responsive={responsive}
           />
         );

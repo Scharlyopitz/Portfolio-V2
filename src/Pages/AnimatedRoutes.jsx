@@ -7,7 +7,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";
 
-export default function AnimatedRoutes({ base, setErrorOff }) {
+export default function AnimatedRoutes({ setErrorOff }) {
   const location = useLocation();
 
   const BasicTitle = `Développeur Front-End | Scharly OPITZ`;
@@ -16,19 +16,16 @@ export default function AnimatedRoutes({ base, setErrorOff }) {
     <>
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path={base} element={<Home BasicTitle={BasicTitle} />} />
+          <Route path="/" element={<Home BasicTitle={BasicTitle} />} />
           <Route
-            path={`${base}projets`}
-            element={<Projets base={base} BasicTitle={BasicTitle} />}
+            path="/projets"
+            element={<Projets BasicTitle={BasicTitle} />}
           />
           <Route
-            path={`${base}projets/:name`}
-            element={<Projet base={base} setErrorOff={setErrorOff} />}
+            path="/projets/:name"
+            element={<Projet setErrorOff={setErrorOff} />}
           />
-          <Route
-            path="*"
-            element={<Error base={base} setErrorOff={setErrorOff} />}
-          />
+          <Route path="*" element={<Error setErrorOff={setErrorOff} />} />
         </Routes>
       </AnimatePresence>
     </>

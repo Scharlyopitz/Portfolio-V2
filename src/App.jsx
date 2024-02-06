@@ -7,8 +7,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 function App() {
-  const base = "/Portfolio-V2/";
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -19,8 +17,8 @@ function App() {
 
   return (
     <>
-      {errorOff && <Nav base={base} />}
-      <AnimatedRoutes base={base} setErrorOff={setErrorOff} />
+      {errorOff && <Nav />}
+      <AnimatedRoutes setErrorOff={setErrorOff} />
       {errorOff && <Contact />}
     </>
   );

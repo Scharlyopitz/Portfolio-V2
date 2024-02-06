@@ -1,96 +1,96 @@
 [
-    {
-        "projet": "P1",
-        "name": "Booki",
-        "image": "/Portfolio-V2/Booki.jpg",
-        "description": [
-            "Booki - un projet de formation réalisé à Openclassrooms",
-            "afin d'apprendre le Html/css. Le but, développer la page",
-            " d'accueil d'une agence de voyage avec HTML & CSS et faire",
-            " en sorte que la page soit responsive."
-        ],
-        "liens": [
-            "https://github.com/Scharlyopitz/Projet-Booki",
-            "https://scharlyopitz.github.io/Projet-Booki/"
-        ]
-    },
-    {
-        "projet": "P2",
-        "name": "Ohmy Food",
-        "image": "/Portfolio-V2/Ohmyfood.jpg",
-        "description": [
-            "OhMyFood - un projet de formation réalisé à ",
-            " OpenClassrooms afin d’apprendre les  ",
-            "animations CSS. Basé sur une maquette Figma  ",
-            "en mobile first, j’ai intégré une page d’accueil,  ",
-            "quatre pages de menu de restaurants et un ",
-            "loader."
-        ],
-        "liens": [
-            "https://github.com/Scharlyopitz/Ohmyfood",
-            "https://scharlyopitz.github.io/Ohmyfood/"
-        ]
-    },
-    {
-        "projet": "P3",
-        "name": "Print It",
-        "image": "/Portfolio-V2/Print-It.jpg",
-        "description": [
-            "Print It - un projet de formation réalisé à Openclassrooms",
-            "afin d'apprendre Javascript. Le but, créer un slider pour",
-            " dynamiser le site internet statique d'une petite entreprise",
-            " familiale muni des intructions qui m'ont été donnée."
-        ],
-        "liens": [
-            "https://github.com/Scharlyopitz/Carrousel-JS",
-            "https://scharlyopitz.github.io/Carrousel-JS/"
-        ]
-    },
-    {
-        "projet": "P4",
-        "name": "Sophie Bluel",
-        "image": "/Portfolio-V2/sophie-bluel.png",
-        "description": [
-            "Sophie Bluel - Portfolio - un projet de formation réalisé à ",
-            "OpenClassrooms afin d’apprendre le JavaScript. Basé sur",
-            "  une maquette Figma, j’ai intégré une page de connexion et",
-            "  affiché dynamiquement depuis une API les travaux dans le",
-            "  portfolio. L’intégration d’une modale était également ",
-            "  demandée afin d’ajouter ou encore de supprimer des ",
-            " travaux en tant qu’administrateur du site."
-        ],
-        "liens": [
-            "https://github.com/Scharlyopitz/Projet-6-Creez-une-page-web-dynamique-avec-JavaScript"
-        ]
-    },
-    {
-        "projet": "P5",
-        "name": "Kasa",
-        "image": "/Portfolio-V2/Kasa.png",
-        "description": [
-            "Kasa - un projet de formation réalisé à Openclassrooms",
-            "afin d'apprendre React. Le but, créer une application web",
-            " de location immobilière, j'ai utilisé nodeJs côté backend",
-            " pour prendre les informations et les ajoutés pour chaque",
-            "  logements et utilisé des composents réutilisables."
-        ],
-        "liens": ["https://github.com/Scharlyopitz/Projet-Kasa-OpenClassroom"]
-    },
-    {
-        "projet": "P6",
-        "name": "Ninna Carducci",
-        "image": "/Portfolio-V2/Projet9.webp",
-        "description": [
-            "Ninna Carducci - un projet de formation réalisé à ",
-            " OpenClassrooms afin d’apprendre le SEO. J'ai  ",
-            " optimisé le référencement d'un site de photographe ",
-            " en bonifiant les images, ajouté une balise meta ",
-            " description et réseaux sociaux, minifié le liens JS",
-            " et CSS etc. Avec l'utilisation de  Google lighthouse."
-        ],
-        "liens": [
-            "https://github.com/Scharlyopitz/Projet-SEO-OpenClassrooms",
-            "https://scharlyopitz.github.io/Projet-SEO-OpenClassrooms/"
-        ]
-    }
+  {
+    "projet": "P1",
+    "name": "Booki",
+    "image": "/Booki.jpg",
+    "description": [
+      "Booki - un projet de formation réalisé à Openclassrooms",
+      "afin d'apprendre le Html/css. Le but, développer la page",
+      " d'accueil d'une agence de voyage avec HTML & CSS et faire",
+      " en sorte que la page soit responsive."
+    ],
+    "liens": [
+      "https://github.com/Scharlyopitz/Projet-Booki",
+      "https://scharlyopitz.github.io/Projet-Booki/"
+    ]
+  },
+  {
+    "projet": "P2",
+    "name": "Ohmy Food",
+    "image": "/Ohmyfood.jpg",
+    "description": [
+      "OhMyFood - un projet de formation réalisé à ",
+      " OpenClassrooms afin d’apprendre les  ",
+      "animations CSS. Basé sur une maquette Figma  ",
+      "en mobile first, j’ai intégré une page d’accueil,  ",
+      "quatre pages de menu de restaurants et un ",
+      "loader."
+    ],
+    "liens": [
+      "https://github.com/Scharlyopitz/Ohmyfood",
+      "https://scharlyopitz.github.io/Ohmyfood/"
+    ]
+  },
+  {
+    "projet": "P3",
+    "name": "Print It",
+    "image": "/Print-It.jpg",
+    "description": [
+      "Print It - un projet de formation réalisé à Openclassrooms",
+      "afin d'apprendre Javascript. Le but, créer un slider pour",
+      " dynamiser le site internet statique d'une petite entreprise",
+      " familiale muni des intructions qui m'ont été donnée."
+    ],
+    "liens": [
+      "https://github.com/Scharlyopitz/Carrousel-JS",
+      "https://scharlyopitz.github.io/Carrousel-JS/"
+    ]
+  },
+  {
+    "projet": "P4",
+    "name": "Sophie Bluel",
+    "image": "/sophie-bluel.png",
+    "description": [
+      "Sophie Bluel - Portfolio - un projet de formation réalisé à ",
+      "OpenClassrooms afin d’apprendre le JavaScript. Basé sur",
+      "  une maquette Figma, j’ai intégré une page de connexion et",
+      "  affiché dynamiquement depuis une API les travaux dans le",
+      "  portfolio. L’intégration d’une modale était également ",
+      "  demandée afin d’ajouter ou encore de supprimer des ",
+      " travaux en tant qu’administrateur du site."
+    ],
+    "liens": [
+      "https://github.com/Scharlyopitz/Projet-6-Creez-une-page-web-dynamique-avec-JavaScript"
+    ]
+  },
+  {
+    "projet": "P5",
+    "name": "Kasa",
+    "image": "/Kasa.png",
+    "description": [
+      "Kasa - un projet de formation réalisé à Openclassrooms",
+      "afin d'apprendre React. Le but, créer une application web",
+      " de location immobilière, j'ai utilisé nodeJs côté backend",
+      " pour prendre les informations et les ajoutés pour chaque",
+      "  logements et utilisé des composents réutilisables."
+    ],
+    "liens": ["https://github.com/Scharlyopitz/Projet-Kasa-OpenClassroom"]
+  },
+  {
+    "projet": "P6",
+    "name": "Ninna Carducci",
+    "image": "/Projet9.webp",
+    "description": [
+      "Ninna Carducci - un projet de formation réalisé à ",
+      " OpenClassrooms afin d’apprendre le SEO. J'ai  ",
+      " optimisé le référencement d'un site de photographe ",
+      " en bonifiant les images, ajouté une balise meta ",
+      " description et réseaux sociaux, minifié le liens JS",
+      " et CSS etc. Avec l'utilisation de  Google lighthouse."
+    ],
+    "liens": [
+      "https://github.com/Scharlyopitz/Projet-SEO-OpenClassrooms",
+      "https://scharlyopitz.github.io/Projet-SEO-OpenClassrooms/"
+    ]
+  }
 ]

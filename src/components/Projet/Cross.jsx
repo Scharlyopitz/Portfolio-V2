@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 import { AnimateArrow } from "../Animations";
 
-export default function Cross({ base }) {
+export default function Cross() {
   return (
-    <Link className="cross" to={`${base}projets`}>
+    <Link className="cross" to="/projets">
       <motion.div
         className="svg"
         variants={AnimateArrow}

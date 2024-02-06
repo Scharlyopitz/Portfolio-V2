@@ -6,7 +6,7 @@ import { useState } from "react";
 
 import { AnimatedProjet } from "../Animations";
 
-export default function ProjetCard({ base, projet, idx, responsive }) {
+export default function ProjetCard({ projet, idx, responsive }) {
   const [dataClick, setDataClick] = useState("");
 
   const { scrollYProgress } = useScroll();
@@ -28,7 +28,7 @@ export default function ProjetCard({ base, projet, idx, responsive }) {
   return (
     <>
       <Link
-        to={`${base}projets/${projet.name}`}
+        to={`/projets/${projet.name}`}
         className={`projet-${idx + 1} `}
         key={idx}
         style={{ pointerEvents: activePointerEvents && "all" }}

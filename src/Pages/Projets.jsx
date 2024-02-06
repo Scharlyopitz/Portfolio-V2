@@ -14,7 +14,7 @@ import TitlePage from "../components/General/TitlePage";
 
 import { useEffect, useState } from "react";
 
-export default function Projets({ base, BasicTitle }) {
+export default function Projets({ BasicTitle }) {
   const body = document.querySelector("body");
 
   const [responsive, setResponsive] = useState(null);
@@ -42,11 +42,7 @@ export default function Projets({ base, BasicTitle }) {
           animate="animate"
           exit="exit"
         >
-          <ProjetCards
-            LesProjets={LesProjets}
-            base={base}
-            responsive={responsive}
-          />
+          <ProjetCards LesProjets={LesProjets} responsive={responsive} />
         </motion.div>
 
         <div className="text-container">
