@@ -482,11 +482,6 @@ header .orangeRed {
     display: none;
   }
 }
-@media (max-width: 425px) {
-  #projets .container-projets .projet-1, #projets .container-projets .projet-2, #projets .container-projets .projet-3, #projets .container-projets .projet-4, #projets .container-projets .projet-5, #projets .container-projets .projet-6 {
-    height: 320px;
-  }
-}
 #projet {
   background: #192929;
   z-index: 2;
