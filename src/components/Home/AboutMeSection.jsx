@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { PageAboutAnimation, easeInExpo, easeOutCubic } from "../Animations";
 import AboutDescription from "../../Pages/AboutDescription";
 import { useEffect, useRef, useState } from "react";
+import { height, width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 
 export default function AboutMeSection({ activeBtn, setActiveBtn }) {
   return (
@@ -81,7 +82,12 @@ function Svg() {
   const [height, setHeight] = useState();
 
   useEffect(() => {
-    setHeight(ref.current.clientHeight);
+    function resize() {
+      setHeight(ref.current.clientHeight);
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
   }, []);
 
   const initialSvgPath = `M0 0 Q ${window.innerWidth / 2} ${height * 2} ${
