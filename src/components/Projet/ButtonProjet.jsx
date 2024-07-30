@@ -10,9 +10,6 @@ import {
 } from "../Animations";
 
 export default function ButtonProjet({ projet }) {
-  const buttonsNames = ["Voir code", "Voir site"];
-
-  console.log(projet.liens);
   return (
     <motion.div
       variants={DelayProjetDescription}
@@ -21,18 +18,25 @@ export default function ButtonProjet({ projet }) {
       exit="exit"
       className="buttons-container"
     >
-      {/* {projet?.liens.map((lien, idx) => {
-        return (
-          <div key={idx} className="parent-btn">
-            <motion.div variants={AnimateProjetDescription} className="button">
-              <ArrowSvg />
-              <Link to={lien} target="_blank">
-                <p>{buttonsNames[idx]}</p>
-              </Link>
-            </motion.div>
-          </div>
-        );
-      })} */}
+      {projet.liens?.github && (
+        <Links projet={projet.liens?.github} name="Voir Code" />
+      )}
+      {projet.liens?.site && (
+        <Links projet={projet.liens?.site} name="Voir Site" />
+      )}
     </motion.div>
+  );
+}
+
+function Links({ projet, name }) {
+  return (
+    <div className="parent-btn">
+      <motion.div variants={AnimateProjetDescription} className="button">
+        <ArrowSvg />
+        <Link to={projet} target="_blank">
+          <p>{name}</p>
+        </Link>
+      </motion.div>
+    </div>
   );
 }
