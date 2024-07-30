@@ -1,6 +1,18 @@
 [
   {
-    "projet": "P1",
+    "name": "Portfolio Graphiste",
+    "image": "/profil.webp",
+    "description": [
+      "Portfolio d'un graphiste, Wilhelm Opitz avec react,",
+      "framer motion et emailJS pour l'envoie du formulaire",
+      "de contact. Responsive design pour l'adaptation sur ",
+      "tout les écran et optimisation des images pour la",
+      "fluidité du site (compression des images et mise au",
+      "format webp."
+    ],
+    "liens": ["https://wilhelmopitz.netlify.app/"]
+  },
+  {
     "name": "Booki",
     "image": "/Booki.jpg",
     "description": [
@@ -15,7 +27,6 @@
     ]
   },
   {
-    "projet": "P2",
     "name": "Ohmy Food",
     "image": "/Ohmyfood.jpg",
     "description": [
@@ -32,22 +43,6 @@
     ]
   },
   {
-    "projet": "P3",
-    "name": "Print It",
-    "image": "/Print-It.jpg",
-    "description": [
-      "Print It - un projet de formation réalisé à Openclassrooms",
-      "afin d'apprendre Javascript. Le but, créer un slider pour",
-      " dynamiser le site internet statique d'une petite entreprise",
-      " familiale muni des intructions qui m'ont été donnée."
-    ],
-    "liens": [
-      "https://github.com/Scharlyopitz/Carrousel-JS",
-      "https://scharlyopitz.github.io/Carrousel-JS/"
-    ]
-  },
-  {
-    "projet": "P4",
     "name": "Sophie Bluel",
     "image": "/sophie-bluel.png",
     "description": [
@@ -64,7 +59,6 @@
     ]
   },
   {
-    "projet": "P5",
     "name": "Kasa",
     "image": "/Kasa.png",
     "description": [
@@ -77,7 +71,6 @@
     "liens": ["https://github.com/Scharlyopitz/Projet-Kasa-OpenClassroom"]
   },
   {
-    "projet": "P6",
     "name": "Ninna Carducci",
     "image": "/Projet9.webp",
     "description": [
