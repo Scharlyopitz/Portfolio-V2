@@ -21,7 +21,7 @@ export default function ButtonProjet({ projet }) {
       exit="exit"
       className="buttons-container"
     >
-      {projet?.liens.map((lien, idx) => {
+      {/* {projet?.liens.map((lien, idx) => {
         return (
           <div key={idx} className="parent-btn">
             <motion.div variants={AnimateProjetDescription} className="button">
@@ -32,7 +32,7 @@ export default function ButtonProjet({ projet }) {
             </motion.div>
           </div>
         );
-      })}
+      })} */}
     </motion.div>
   );
 }
