@@ -347,6 +347,10 @@ header .orangeRed {
   #aboutMe .trait {
     display: none;
   }
+  #aboutMe svg {
+    height: 50px !important;
+    bottom: -49px !important;
+  }
   #aboutMe .about-btn {
     bottom: 35%;
   }
