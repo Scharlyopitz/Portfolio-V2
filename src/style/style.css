@@ -475,6 +475,9 @@ header .orangeRed {
     height: 500px;
     position: initial;
   }
+  #projets .container-projets .projet-1 div, #projets .container-projets .projet-2 div, #projets .container-projets .projet-3 div, #projets .container-projets .projet-4 div, #projets .container-projets .projet-5 div, #projets .container-projets .projet-6 div {
+    width: 100%;
+  }
   #projets .container-projets .projet-3 {
     margin-top: 0;
   }
