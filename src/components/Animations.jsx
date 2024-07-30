@@ -458,35 +458,6 @@ export const PageAboutDescriptionDelay = {
   },
 };
 
-// SVG
-
-const initialSvgPath = `M0 0 Q ${window.innerWidth / 2} 200 ${
-  window.innerWidth
-} 0`;
-
-const animatedSvgPath = `M0 0 Q ${window.innerWidth / 2} 0 ${
-  window.innerWidth
-} 0`;
-
-export const AnimationSvg = {
-  initial: { d: initialSvgPath },
-  animate: {
-    d: animatedSvgPath,
-    transition: {
-      duration: AnimationDuration,
-      ease: easeInOutCubic,
-    },
-  },
-  exit: {
-    d: initialSvgPath,
-    transition: {
-      duration: 0.6,
-      ease: easeInOutCubic,
-      delay: 0.3,
-    },
-  },
-};
-
 // ANIMATION BTN ABOUT ME
 
 export const AnimatedABoutBtn = {
