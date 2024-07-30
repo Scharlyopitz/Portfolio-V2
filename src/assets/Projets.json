@@ -10,7 +10,7 @@
       "fluidité du site (compression des images et mise au",
       "format webp."
     ],
-    "liens": ["https://wilhelmopitz.netlify.app/"]
+    "liens": [{ "site": "https://wilhelmopitz.netlify.app/" }]
   },
   {
     "name": "Booki",
@@ -38,8 +38,8 @@
       "loader."
     ],
     "liens": [
-      "https://github.com/Scharlyopitz/Ohmyfood",
-      "https://scharlyopitz.github.io/Ohmyfood/"
+      { "github": "https://github.com/Scharlyopitz/Ohmyfood" },
+      { "site": "https://scharlyopitz.github.io/Ohmyfood/" }
     ]
   },
   {
@@ -55,7 +55,9 @@
       " travaux en tant qu’administrateur du site."
     ],
     "liens": [
-      "https://github.com/Scharlyopitz/Projet-6-Creez-une-page-web-dynamique-avec-JavaScript"
+      {
+        "github": "https://github.com/Scharlyopitz/Projet-6-Creez-une-page-web-dynamique-avec-JavaScript"
+      }
     ]
   },
   {
@@ -68,7 +70,9 @@
       " pour prendre les informations et les ajoutés pour chaque",
       "  logements et utilisé des composents réutilisables."
     ],
-    "liens": ["https://github.com/Scharlyopitz/Projet-Kasa-OpenClassroom"]
+    "liens": [
+      { "github": "https://github.com/Scharlyopitz/Projet-Kasa-OpenClassroom" }
+    ]
   },
   {
     "name": "Ninna Carducci",
@@ -82,8 +86,8 @@
       " et CSS etc. Avec l'utilisation de  Google lighthouse."
     ],
     "liens": [
-      "https://github.com/Scharlyopitz/Projet-SEO-OpenClassrooms",
-      "https://scharlyopitz.github.io/Projet-SEO-OpenClassrooms/"
+      { "github": "https://github.com/Scharlyopitz/Projet-SEO-OpenClassrooms" },
+      { "site": "https://scharlyopitz.github.io/Projet-SEO-OpenClassrooms/" }
     ]
   }
 ]

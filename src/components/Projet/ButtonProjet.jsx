@@ -11,6 +11,8 @@ import {
 
 export default function ButtonProjet({ projet }) {
   const buttonsNames = ["Voir code", "Voir site"];
+
+  console.log(projet.liens);
   return (
     <motion.div
       variants={DelayProjetDescription}
