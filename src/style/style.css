@@ -511,7 +511,7 @@ header .orangeRed {
   transform: translateY(-50%);
   right: 10%;
   width: 400px;
-  height: 500px;
+  height: 60vh;
 }
 #projet .img-container img {
   width: 100%;
